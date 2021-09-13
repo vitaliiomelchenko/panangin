@@ -1,0 +1,137 @@
+header
+	background: #002169
+	color: #fff
+	padding-bottom: 30px
+	padding-top: 30px
+	.header__menu
+		&Item
+			list-style: none
+			padding-left: 25px
+			padding-right: 25px
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+			a
+				font-size: 18px
+				line-height: 23px
+				display: flex
+				align-items: center
+				color: #EDEDED 
+				text-decoration: none			
+				&:hover
+					color: #ED135A
+					font-weight: bold
+		&__row
+			margin-bottom: 0
+			align-items: center
+#menuToggle
+  display: block
+  position: relative
+  top: 25px
+  left: 95%
+  z-index: 1
+  -webkit-user-select: none
+  user-select: none
+  width: 100%
+#menuToggle a
+  text-decoration: none
+  color: #232323
+  transition: color 0.3s ease
+#menuToggle a:hover
+  color: tomato
+#menuToggle input
+  display: block
+  width: 40px
+  height: 32px
+  position: absolute
+  top: -7px
+  left: -5px
+  cursor: pointer
+  opacity: 0
+  z-index: 2
+  -webkit-touch-callout: none
+#menuToggle span
+  display: block
+  width: 33px
+  height: 4px
+  margin-bottom: 5px
+  position: relative
+  background: #cdcdcd
+  border-radius: 3px
+  z-index: 1
+  transform-origin: 4px 0px
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+#menuToggle span:first-child
+  transform-origin: 0% 0%
+#menuToggle span:nth-last-child(2)
+  transform-origin: 0% 100%
+#menuToggle input:checked ~ span
+  opacity: 1
+  transform: rotate(45deg) translate(-2px, -1px)
+  background: #EDEDED
+#menuToggle input:checked ~ span:nth-last-child(3)
+  opacity: 0
+  transform: rotate(0deg) scale(0.2, 0.2)
+#menuToggle input:checked ~ span:nth-last-child(2)
+  transform: rotate(-45deg) translate(0, -1px)
+#menu
+  position: absolute
+  left: -92%
+  width: 115%
+  margin: -100px 0 0 -50px
+  padding: 50px
+  padding-top: 125px
+  background: #0054A6
+  list-style-type: none
+  -webkit-font-smoothing: antialiased
+  transform-origin: 0% 0%
+  transform: translate(-100%, 0) 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+  text-align: center
+  li
+    a
+        line-height: 23px
+        text-decoration: none
+        color: #EDEDED
+#menu li
+  padding: 10px 0
+  font-size: 22px
+#menuToggle input:checked ~ ul
+  transform: none
+#menuToggle
+	input
+		span
+			&:nth-child(2)
+				width: 25px
+.header__menu__row
+	.menu-item
+		width: fit-content
+		list-style: none
+		font-weight: 400
+		font-size: 18px
+		padding-left: 25px
+		padding-right: 25px
+		a
+			color: #fff
+			line-height: 23px
+			text-decoration: none
+		&:nth-child(3)
+			a
+				font-weight: 600
+				color: #ED135A
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+.burgerMenu__logo
+  position: absolute
+  top: 15px
+  left: 46px
+
+			
+
+
+
+
+
