@@ -40,7 +40,7 @@ endif; ?>
                                         <h5>
                                             <?php the_title(); ?>
                                         </h5>
-                                        <a class="blog__itemButton" href="<?php echo get_the_permalink(); ?>">Читати далі <svg width="17" height="15"
+                                        <a class="blog-button" href="<?php echo get_the_permalink(); ?>">Читати далі <svg width="17" height="15"
                                                 viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M15.75 7.72559L0.75 7.72559" stroke="#58585B" stroke-width="1.5"
                                                     stroke-linecap="round" stroke-linejoin="round" />
