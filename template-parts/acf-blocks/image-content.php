@@ -16,7 +16,7 @@
                 <div class="col-lg-6 image_content__imageWrapper">
                 <?php if( !empty( $imageIC ) ): ?>
                     <img src="<?php echo esc_url($imageIC['url']); ?>" alt="<?php echo esc_attr($imageIC['alt']); ?>" />
-                    <div class="image_content__buttonsWrapper row">
+                    <div class="image_content__buttonsWrapper">
                         <a href="<?php echo esc_url( $buttonRedIC['url'] ); ?>" class="button button-primary"><?php echo esc_html( $buttonRedIC['title'] ); ?></a>
                         <a href="<?php echo esc_url( $buttonBlueIC['url'] ); ?>" class="button button-secondary"><?php echo esc_html( $buttonBlueIC['title'] ); ?></a>
                     </div>
