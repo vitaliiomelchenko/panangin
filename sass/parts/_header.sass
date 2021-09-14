@@ -1,9 +1,10 @@
 header
-	background: $color-primary
+	background: #002169
 	color: #fff
 	padding-bottom: 30px
 	padding-top: 30px
-	&__menuItem
+	.header__menu
+		&Item
 			list-style: none
 			padding-left: 25px
 			padding-right: 25px
@@ -21,7 +22,7 @@ header
 				&:hover
 					color: #ED135A
 					font-weight: bold
-	&__menu__row
+		&__row
 			margin-bottom: 0
 			align-items: center
 #menuToggle
@@ -33,8 +34,6 @@ header
   -webkit-user-select: none
   user-select: none
   width: 100%
-  +min-screen($breakpoint-lg)
-    display: none
 #menuToggle a
   text-decoration: none
   color: #232323
@@ -129,6 +128,10 @@ header
   position: absolute
   top: 15px
   left: 46px
-.header__menu__row
-  +max-screen($breakpoint-lg)
-    display: none
+
+			
+
+
+
+
+

@@ -697,6 +697,33 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_61403ca5401c2": {
+                    "key": "layout_61403ca5401c2",
+                    "name": "video-block",
+                    "label": "video",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61403e2c05ffe": {
+                    "key": "layout_61403e2c05ffe",
+                    "name": "blog",
+                    "label": "Блог",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6140446fbeb8b": {
+                    "key": "layout_6140446fbeb8b",
+                    "name": "warning",
+                    "label": "Попередження",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Додати рядок",
@@ -728,5 +755,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1631032090
+    "modified": 1631602040
 }
