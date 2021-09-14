@@ -1,5 +1,6 @@
 .cta
     margin-bottom: 92px
+    position: relative
     +max-screen($breakpoint-lg)
         display: none
     &__row
@@ -36,4 +37,14 @@
         padding: 19px 52px
 .cta__image
     padding: 0 !important
+.cta__leftTopDecoration
+    position: absolute
+    bottom: -11px
+    left: 160px
+    z-index: 1
+.cta__leftBottomDecoration
+    position: absolute
+    top: 25px
+    z-index: 1
+    right: 160px
 

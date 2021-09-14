@@ -6,6 +6,8 @@
     $imageIC = get_sub_field('imageIC');
 ?>
 <section class="image_content">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/left-imagecontent.png" alt="" class="imageContent__leftDecoration">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/right-imagecontent.png" alt="" class="imageContent__rightDecoration">
         <div class="container">
             <?php if( $headingIC) : ?>
                 <div class="image_content__heading text--center">

@@ -5,6 +5,10 @@
     $buttonBlueFeatures = get_sub_field('buttonBlueFeatures');
 ?> 
 <section class="features">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fdlt.png" alt="" class="features__leftTopDecoration">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fdlb.png" alt="" class="features__leftBottomDecoration">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fdrt.png" alt="" class="features__rightTopDecoration ">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/fdrb.png" alt="" class="features__rightBottomDecoration">
     <div class="container">
         <?php if( $headingFeatures ) : ?>
             <div class="features__heading">

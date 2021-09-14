@@ -4,6 +4,8 @@
     $imageCTA = get_sub_field('imageCTA');
 ?>
 <section class="cta">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-left.png" alt="" class="cta__leftTopDecoration">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/cta-right.png" alt="" class="cta__leftBottomDecoration">
     <div class="container">
         <div class="cta__row row">
         <div class="cta__arrow">
