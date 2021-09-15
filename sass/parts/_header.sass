@@ -34,6 +34,8 @@ header
   -webkit-user-select: none
   user-select: none
   width: 100%
+  +min-screen($breakpoint-md)
+    display: none
 #menuToggle a
   text-decoration: none
   color: #232323
@@ -128,6 +130,19 @@ header
   position: absolute
   top: 15px
   left: 46px
+.header__menu__row
+	.menu-item
+    &:nth-child(5)
+      padding-right: 35px
+    &:last-child
+      margin-left: 40px
+      background: $color-secondary
+      border-radius: 5px
+      padding: 3px 14px
+
+
+    
+    
 
 			
 
