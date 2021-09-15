@@ -1,11 +1,12 @@
 var $ = jQuery;
 
 //nav
-$('#nav-toggle').on('click',function(){
-	$('header').toggleClass('header-active');
-});
-$('.nav-close').on('click',function(){
-	$('header').removeClass('header-active');
+$(document).ready(function() {
+  console.log('test');
+	$('.menu-toggle').on("click",function(){
+    $('.header').addClass('menu-active');
+    $('body').addClass('menu-active');
+	})
 });
 
 $('.menu-item__parent').each(function(){

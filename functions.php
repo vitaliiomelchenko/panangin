@@ -14,9 +14,9 @@ function starter_setup(){
 	register_nav_menus(
 		array( 
 			'main-menu' => __( 'Main Menu', 'starter' ),
-      'footer-menu-1' => __( 'Footer Menu 1', 'starter'),
-      'footer-menu-2' => __( 'Footer Menu 2', 'starter'),
-      'footer-bottom-menu' => __( 'Footer Bottom Menu', 'starter')
+			'footer-menu-1' => __( 'Footer Menu 1', 'starter'),
+			'footer-menu-2' => __( 'Footer Menu 2', 'starter'),
+			'footer-bottom-menu' => __( 'Footer Bottom Menu', 'starter')
 		)
 	);
 }
@@ -163,3 +163,11 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+function panangin_menu_classes($classes, $item, $args) {
+	if($args->theme_location == 'Main menu') {
+	  $classes[] = 'header__menuItem col-lg-auto';
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'panangin_menu_classes', 1, 3);
