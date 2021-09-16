@@ -8,7 +8,7 @@
 </head>
 <?php wp_head(); ?>
 <body <?php body_class(); ?>>
-    <header class="header">
+    <header id="header" class="header">
         <div class="container">
             <div class="row">
                 <a href="<?php echo get_home_url(); ?>" class="col-lg-auto header__logoWrapper">
