@@ -3,84 +3,6 @@ header
 	color: #fff
 	padding-bottom: 30px
 	padding-top: 30px
-
-#menuToggle
-  display: none
-  position: relative
-  top: 25px
-  left: 95%
-  z-index: 1
-  -webkit-user-select: none
-  user-select: none
-  width: 100%
-  a
-    text-decoration: none
-    color: #232323
-    transition: color 0.3s ease
-  input
-    display: block
-    width: 40px
-    height: 32px
-    position: absolute
-    top: -7px
-    left: -5px
-    cursor: pointer
-    opacity: 0
-    z-index: 2
-    -webkit-touch-callout: none
-  span
-    display: block
-    width: 33px
-    height: 4px
-    margin-bottom: 5px
-    position: relative
-    background: #cdcdcd
-    border-radius: 3px
-    z-index: 1
-    transform-origin: 4px 0px
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
-#menuToggle span:first-child
-  transform-origin: 0% 0%
-#menuToggle span:nth-last-child(2)
-  transform-origin: 0% 100%
-#menuToggle input:checked ~ span
-  opacity: 1
-  transform: rotate(45deg) translate(-2px, -1px)
-  background: #EDEDED
-#menuToggle input:checked ~ span:nth-last-child(3)
-  opacity: 0
-  transform: rotate(0deg) scale(0.2, 0.2)
-#menuToggle input:checked ~ span:nth-last-child(2)
-  transform: rotate(-45deg) translate(0, -1px)
-#menu
-  position: absolute
-  left: -92%
-  width: 115%
-  margin: -100px 0 0 -50px
-  padding: 50px
-  padding-top: 125px
-  background: #0054A6
-  list-style-type: none
-  -webkit-font-smoothing: antialiased
-  transform-origin: 0% 0%
-  transform: translate(-100%, 0) 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
-  text-align: center
-  li
-    a
-        line-height: 23px
-        text-decoration: none
-        color: #EDEDED
-#menu li
-  padding: 10px 0
-  font-size: 22px
-#menuToggle input:checked ~ ul
-  transform: none
-#menuToggle
-	input
-		span
-			&:nth-child(2)
-				width: 25px
 .header__menu__row
 	.menu-item
 		width: fit-content
@@ -92,7 +14,6 @@ header
   position: absolute
   top: 15px
   left: 46px
-
 .header
   .row
     position: relative
@@ -119,7 +40,7 @@ header
     .header
       &__menu__row
         position: absolute
-        background: red
+        background: #0054A6
         top: 65px
         left: 0
         width: 100%
@@ -127,6 +48,13 @@ header
         height: calc(100vh - 98px)
         z-index: 999
         display: block
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+      &__menuItem
+        margin-right: 0
+        margin-bottom: 30px
 .menu-toggle
   display: none
   +max-screen($breakpoint-lg)
@@ -145,3 +73,26 @@ header
       .header
         &__menu__row
           height: calc(100vh - 127px)
+  .header
+    &.menu-active
+      .container
+        .row
+          .menu-toggle
+            display: none
+.menu-toggle-active
+  display: none
+  +max-screen($breakpoint-lg)
+    width: 46px
+    height: 13px
+    object-fit: contain
+    position: absolute
+    right: 16px
+    top: 50%
+    transform: translateY(-50%)
+.header
+  &.menu-active
+    background: #0054A6
+    .container
+      .row
+        .menu-toggle-active
+          display: block

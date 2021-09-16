@@ -1,8 +1,8 @@
 
 <?php get_header(); ?>
-<!-- <?php if(have_rows('flexible_content')):?>
+<?php if(have_rows('flexible_content')):?>
 	<?php  while(have_rows('flexible_content')): the_row(); ?>
       <?php get_template_part('/template-parts/acf-blocks/' . get_row_layout()); ?>
     <?php endwhile;
-endif; ?> -->
+endif; ?> 
 <?php get_footer(); ?>
