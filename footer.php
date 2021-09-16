@@ -1,5 +1,6 @@
 
-    <footer style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/footer.png;">
+    <footer style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/footer.png);">
+        <section class="footer--content--wrapper" style="background-color: #0054A6">
         <div class="container">
             <?php if( have_rows('footerContact__row', 'option') ): ?>
                 <ul class="footerContact__row row">
@@ -60,6 +61,7 @@
                 </div>
             </div>
         </div>
+    </section>
     </section>
 </footer>
 	<?php wp_footer(); ?>

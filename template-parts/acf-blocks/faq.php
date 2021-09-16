@@ -3,7 +3,7 @@
     $formFAQ = get_sub_field('formFAQ');
     $formImageFAQ = get_sub_field('formImageFAQ');
 ?>
-<section class="faq">
+<section id="faq" class="faq">
     <div class="container">
         <?php if( $headingFAQ ) : ?> 
             <div class="faq__heading">
