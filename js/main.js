@@ -83,3 +83,13 @@ $('.appear').each(function() {
         offset: '95%'
     });
 });
+
+//Hero link scroll
+$(document).ready(function() {
+	$('.hero__arrowLink').on("click",function(e){
+    e.preventDefault;
+    $('html,body').animate({
+      scrollTop: $(window).scrollTop() + 800
+    });
+  });
+})
