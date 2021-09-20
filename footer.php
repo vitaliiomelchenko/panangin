@@ -34,8 +34,8 @@
                     <ul class="footerMenu__itemList">
                         <?php 
                             wp_nav_menu( [
-                                'theme_location'  => 'footer-menu-1',
-                                'menu'            => 'Меню в подвале 1',
+                                'theme_location'  => 'Footer Menu 1 RU',
+                                'menu'            => 'Footer first ru',
                                 'container'       => 'false',
                                 'menu_class'      => 'footerMenu__itemList',
                                 'menu_id'         => '',
@@ -48,8 +48,8 @@
                     <ul class="footerMenu__itemList">
                     <?php 
                             wp_nav_menu( [
-                                'theme_location'  => 'footer-menu-2',
-                                'menu'            => 'Меню в подвале 2',
+                                'theme_location'  => 'Footer Menu 2 RU',
+                                'menu'            => 'Footer second ru',
                                 'container'       => 'false',
                                 'menu_class'      => 'footerMenu__itemList',
                                 'menu_id'         => '',

@@ -16,8 +16,8 @@
                 </a>
                 <?php
                 wp_nav_menu( [
-                    'theme_location'  => 'Main menu',
-                    'menu'            => 'header-menu',
+                    'theme_location'  => 'Main Menu RU',
+                    'menu'            => 'main_menu',
                     'container'       => false,
                     'menu_class'      => 'row header__menu__row col-lg-auto ml-lg-auto',
                     'echo'            => true,

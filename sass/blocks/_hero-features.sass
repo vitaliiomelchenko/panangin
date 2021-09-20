@@ -1,0 +1,33 @@
+.hero__features
+    margin-bottom: 100px
+    &__row
+        padding-left: 0
+    &__heading
+        margin-bottom: 51px
+        text-align: center
+    &__item
+        list-style: none
+        text-align: center
+        padding-left: 15px
+        padding-right: 15px
+        margin-bottom: 80px
+        &Inner
+            box-shadow: 0px 7px 15px rgba(237, 19, 90, 0.2)
+            border-radius: 10px
+            min-height: 100%
+            padding: 30px 45px
+            +max-screen($breakpoint-lg)
+                margin-bottom: 50px
+            +max-screen($breakpoint-md)
+                margin-bottom: 50px
+        &Image
+            position: relative 
+            img
+                margin-top: -35px
+                border-radius: 50%   
+                object-fit: contain
+                max-width: 146px
+                max-height: 146px
+        &Content
+            p
+                margin-top: 10px
