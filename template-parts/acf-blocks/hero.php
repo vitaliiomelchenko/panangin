@@ -3,6 +3,7 @@
     $heroImage = get_sub_field('heroImage');
     $heroContentImage = get_sub_field('heroContentImage');
 ?>
+
 <section class="hero">
     <img class="hero__background" src="<?php echo get_template_directory_uri() . '/assets/images/blocks/hero/hero_bg.jpeg';?>"></img>
     <a href="#" class="hero__arrowLink">
@@ -15,15 +16,16 @@
                     <img class="hero__image" src="<?php echo esc_url($heroImage['url']); ?>" alt="<?php echo esc_attr($heroImage['alt']); ?>">
                 </div>
             <?php endif;?>
-            <div class="col-lg-5 hero__contentWrapper">
-                <?php if( $heroText ) : ?>
-                    <h1><?php echo $heroText ?></h1>
-                <?php endif;?>
-                <!-- <div class="hero__ContentImageBackground"></div> -->
-                <?php if( !empty( $heroContentImage ) ): ?>
-                     <img class="hero__ContentImage" src="<?php echo esc_url($heroContentImage['url']); ?>" alt="<?php echo esc_attr($heroContentImage['alt']); ?>">
-                <?php endif;?>
-            </div>
+            <?php if( $heroText || $heroContentImage) : ?>
+                <div class="col-lg-5 hero__contentWrapper">
+                    <?php if( $heroText ) : ?>
+                        <h1><?php echo $heroText ?></h1>
+                    <?php endif;?>
+                    <?php if( !empty( $heroContentImage ) ): ?>
+                        <img class="hero__ContentImage" src="<?php echo esc_url($heroContentImage['url']); ?>" alt="<?php echo esc_attr($heroContentImage['alt']); ?>">
+                    <?php endif;?>
+                </div>
+            <?php endif;?>
         </div>
     </div>
     <div class="hero__contentHeart">
