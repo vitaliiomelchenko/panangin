@@ -1,20 +1,49 @@
 .hero
     position: relative
-    padding-bottom: 200px
-    
+    height: calc(100vh - 132px)
+    min-height: 600px
+    overflow-x: hidden
+    +max-screen($breakpoint-lg)
+        padding-top: 150px
+        padding-bottom: 50px
+        height: auto
+    h1
+        position: absolute
+        top: -70px
+        font-size: 52px
+        color: white
+        +max-screen($breakpoint-lg)
+            top: 50px
+            font-size: 36px
+            text-align: center
+            width: 100%
+    &__row
+        align-items: center
     &__background
         position: absolute
-        top: 0
+        top: 0px
         left: 0
         z-index: -2
         width: 100%
+        height: 100%
         svg
-            width: 106%
+            width: 100%
+    &__arrowLink
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 20px
+        z-index: 10
+        
+        &:hover
+            .hero__arrow
+                transform: scale(1.1)
+    &__arrow
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        transition: .5s all
     &__content
-        &Wrapper
-            h1
-                font-size: 52px
-                color: #fff
         &Image
             position: relative
             &Background
@@ -27,16 +56,54 @@
                 height: 508px
         &Heart
             position: absolute
-            top: 23%
+            top: 150px
             right: -55px
             z-index: -1
+            +max-screen($breakpoint-lg)
+                top: unset
+                right: unset
+                left: 35%
+                bottom: 220px
+            svg
+                +max-screen($breakpoint-lg)
+                    height: 120px
+    &__imageWrapper
+        +max-screen($breakpoint-lg)
+            z-index: -1
+    &__image
+        height: 100%
+        width: 100%
+    &__ContentImage
+        width: 434px
+        height: 309px
+        object-fit: contain
+        margin-top: 50px
+        +max-screen($breakpoint-lg)
+            max-width: 100%
+            margin-top: -110px
+    &__contentWrapper
+        position: relative
+        +max-screen($breakpoint-lg)
+            position: static
+        &::before
+            content: ""
+            display: block
+            width: 500px
+            height: 500px
+            position: absolute
+            top: -10%
+            left: -10%
+            background: white
+            filter: blur(50px)
+            opacity: .5
+            z-index: -1
+            border-radius: 50%
+            +max-screen($breakpoint-lg)
+                display: none
+
 .warning
     img
         width: 100%
-.customize-support
-    .hero
-        .container
-            width: 1289px !important
     
 
 

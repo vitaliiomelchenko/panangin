@@ -4,27 +4,24 @@
     $heroContentImage = get_sub_field('heroContentImage');
 ?>
 <section class="hero">
-    <div class="hero__background">
-        <svg height="750" viewBox="0 0 1440 750" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-231.351 -0.0129395H1688.65V674.628C1688.65 674.628 1100.69 749.987 722.5 749.987C355.582 749.987 -231.351 674.628 -231.351 674.628V-0.0129395Z" fill="#002169"/>
-        </svg>  
-    </div>
+    <img class="hero__background" src="<?php echo get_template_directory_uri() . '/assets/images/blocks/hero/hero_bg.jpeg';?>"></img>
+    <a href="#" class="hero__arrowLink">
+        <img class="hero__arrow" src="<?php echo get_template_directory_uri() . '/assets/images/blocks/hero/hero_arrow.jpeg';?>"></img>
+    </a>
     <div class="container">
         <div class="row hero__row">
             <?php if( !empty( $heroImage ) ): ?>
-                <div class="col-lg-6 hero__imageWrapper">
-                    <img src="<?php echo esc_url($heroImage['url']); ?>" alt="<?php echo esc_attr($heroImage['alt']); ?>">
+                <div class="col-lg-7 hero__imageWrapper">
+                    <img class="hero__image" src="<?php echo esc_url($heroImage['url']); ?>" alt="<?php echo esc_attr($heroImage['alt']); ?>">
                 </div>
             <?php endif;?>
-            <div class="col-lg-5  offset-lg-1 hero__contentWrapper">
+            <div class="col-lg-5 hero__contentWrapper">
                 <?php if( $heroText ) : ?>
                     <h1><?php echo $heroText ?></h1>
                 <?php endif;?>
-                <div class="hero__ContentImageBackground"></div>
+                <!-- <div class="hero__ContentImageBackground"></div> -->
                 <?php if( !empty( $heroContentImage ) ): ?>
-                    <div class="hero__ContentImage">
-                        <img src="<?php echo esc_url($heroContentImage['url']); ?>" alt="<?php echo esc_attr($heroContentImage['alt']); ?>">
-                    </div>
+                     <img class="hero__ContentImage" src="<?php echo esc_url($heroContentImage['url']); ?>" alt="<?php echo esc_attr($heroContentImage['alt']); ?>">
                 <?php endif;?>
             </div>
         </div>
