@@ -39,8 +39,8 @@
                 </a>
                 <?php
                 wp_nav_menu( [
-                    'theme_location'  => 'main_menu UA',
-                    'menu'            => 'Main Menu RU',
+                    'theme_location'  => 'Main Menu RU',
+                    'menu'            => 'forte',
                     'container'       => false,
                     'menu_class'      => 'row header__menu__row col-lg-auto ml-lg-auto',
                     'echo'            => true,
