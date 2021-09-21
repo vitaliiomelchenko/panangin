@@ -11,7 +11,7 @@
             </div>
         <?php endif; ?> 
         <div class="row">
-            <div class="col-lg-4 faq__formWrapper">
+            <div class="col-lg-auto faq__formWrapper">
                 <?php if($formFAQ) : ?>
                     <?php echo $formFAQ ?>
                     <?php if( !empty( $formImageFAQ) ): ?>
@@ -25,7 +25,7 @@
                 $a = 1;
             ?>
             <?php if( have_rows('faq_row') ): ?>
-            <div class="col-lg-8">
+            <div class="col-lg-auto faq__Wrapper">
                 <div class="wrapper">
                     <div class="half">
                         <?php while( have_rows('faq_row') ) : the_row(); 
