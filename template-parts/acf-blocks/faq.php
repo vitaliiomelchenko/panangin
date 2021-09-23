@@ -32,17 +32,34 @@
                             $questionFAQ = get_sub_field('questionFAQ');
                             $answerFAQ = get_sub_field('answerFAQ');
                         ?>
-                            <div class="tab">
-                                <input id="<?php echo $i++?>" type="checkbox" name="tabs">
-                                <label for="<?php echo $a++?>">
-                                    <?php echo $questionFAQ ?> 
-                                </label>
-                                <div class="tab-content">
-                                    <p>
-                                        <?php echo $answerFAQ ?> 
-                                    </p>
-                                </div>
-                            </div>
+<!--                             <div class="b-faq">
+								<div class="tab faq__item">
+									<input id="<?php echo $i++;?>" type="checkbox" name="tabs">
+									<label for="<?php echo $a++;?>">
+										<?php echo $questionFAQ ?> 
+									</label>
+									<a href="#" class="faq__title js-faq-title">
+										<div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div> 
+										<span class="faq__text"><?php echo $questionFAQ ?> </span>
+									</a>
+									<div class="tab-content faq__content js-faq-content">
+										<p>
+											<?php echo $answerFAQ ?> 
+										</p>
+									</div>
+								</div>
+							</div> -->
+						<div class="b-faq">
+							<div class="tab faq__item">
+								<a href="" class="faq__title js-faq-title">
+									<div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div> 
+									<span class="faq__text"><?php echo $questionFAQ ?></span>
+								</a>
+								<div class="faq__content js-faq-content" style="display: none;">
+									<?php echo $answerFAQ ?> 
+								</div>
+							</div>
+						</div>
                         <?php endwhile; ?>
                     </div>
                 </div>
@@ -50,3 +67,37 @@
         <?php endif; ?>
     </div>
 </section>
+	
+	
+		<!-- FAQ SECTION 
+			<div class="b-faq">
+				<div class="faq__item">
+					<a href="#" class="faq__title js-faq-title">
+						<div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div> 
+						<span class="faq__text">Заголовок не очень длинный</span>
+					</a>
+					<div class="faq__content js-faq-content">
+						Здесь контент<br/>
+            Здесь контент<br/>
+            Здесь контент<br/>
+            Здесь контент<br/>
+            Здесь контент<br/>
+            Здесь контент<br/>
+					</div>
+				</div>
+			</div>
+		<!-- FAQ SECTION END -->
+		<!-- FAQ SECTION 
+			<div class="b-faq">
+				<div class="faq__item">
+					<a href="#" class="faq__title js-faq-title">
+						<div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div> 
+						<span class="faq__text">Заголовок не очень длинный</span>
+					</a>
+					<div class="faq__content js-faq-content">
+						Здесь контент
+					</div>
+				</div>
+			</div>
+		<!-- FAQ SECTION END -->
+<!-- END -->

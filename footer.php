@@ -64,6 +64,8 @@
     </section>
     </section>
 </footer>
+
 	<?php wp_footer(); ?>
+    <script src="https://kit.fontawesome.com/600afa09b2.js" crossorigin="anonymous"></script>
 </body>
 </html>

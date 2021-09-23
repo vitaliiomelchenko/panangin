@@ -1,10 +1,10 @@
 <?php
-/* Template Name: Текст */
+/* Template Name: Текст-форте */
 ?>
 <?php get_header(); ?>
     <section class="instructions">
         <div class="container">
-            <div class="text-block">
+            <div class="text-block-forte">
                 <div class="page__heading"></div>
                     <?php the_content(); ?>
             </div>

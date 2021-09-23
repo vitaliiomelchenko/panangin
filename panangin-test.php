@@ -6,160 +6,160 @@
 
 get_header();  ?>
 
-<div class="test-home container" style="margin-bottom: 200px">
+<div class="test-home container test-wrapper" style="margin-bottom: 70px">
 
     <div class="steps">
         <div id="step1" class="step_active">
             <div class="linesteps">
-                <div class="pic">1</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Вредные блюда самые вкусные. Поэтому я регулярно
                 ем и жирное, и жареное. За день я съедаю до 60 г
                 различных жиров и более 100 г мяса и колбасы</div>
             <div class="ansver" id="ansver1">
-                <div onclick="test_step(1,0)" id="ansver10"><i class="fa fa-circle-o"></i>Нет, ни в коем случае </div>
-                <div onclick="test_step(1,3)" id="ansver13"><i class="fa fa-circle-o"></i>Да, но лишь иногда </div>
-                <div onclick="test_step(1,6)" id="ansver16"><i class="fa fa-circle-o"></i>Не вижу смысла себя
+                <div onclick="test_step(1,0)" id="ansver10"><i class="far fa-circle"></i>Нет, ни в коем случае </div>
+                <div onclick="test_step(1,3)" id="ansver13"><i class="far fa-circle"></i>Да, но лишь иногда </div>
+                <div onclick="test_step(1,6)" id="ansver16"><i class="far fa-circle"></i>Не вижу смысла себя
                     ограничивать и съедаю даже больше</div>
             </div>
-            <div class="nextblock" onclick="gotostep('2')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('2')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
         <div id="step2">
             <div class="linesteps">
-                <div class="pic">2</div>
+                <div class="pic"><div class="pic-inner"></div><span class="pic-inner"></span></div>
             </div>
             <div class="questtxt">Мой вес превышает норму более чем на 5 кг</div>
             <div class="ansver" id="ansver2">
-                <div onclick="test_step(2,0)" id="ansver20"><i class="fa fa-circle-o"></i>Конечно же, нет</div>
-                <div onclick="test_step(2,3)" id="ansver23"><i class="fa fa-circle-o"></i>Да, но не больше 15 кг</div>
-                <div onclick="test_step(2,6)" id="ansver26"><i class="fa fa-circle-o"></i>Мой вес превышает норму более
+                <div onclick="test_step(2,0)" id="ansver20"><i class="far fa-circle"></i>Конечно же, нет</div>
+                <div onclick="test_step(2,3)" id="ansver23"><i class="far fa-circle"></i>Да, но не больше 15 кг</div>
+                <div onclick="test_step(2,6)" id="ansver26"><i class="far fa-circle"></i>Мой вес превышает норму более
                     чем на 15 кг, и с этим
                     ничего не поделать</div>
             </div>
-            <div class="nextblock" onclick="gotostep('3')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('3')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
         <div id="step3">
             <div class="linesteps">
-                <div class="pic">3</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Я считаю, что курить — это нормально</div>
             <div class="ansver" id="ansver3">
-                <div onclick="test_step(3,0)" id="ansver30"><i class="fa fa-circle-o"></i>Нет, не курю уже больше года
+                <div onclick="test_step(3,0)" id="ansver30"><i class="far fa-circle"></i>Нет, не курю уже больше года
                 </div>
-                <div onclick="test_step(3,8)" id="ansver38"><i class="fa fa-circle-o"></i>Да, но не более 10 сигарет
+                <div onclick="test_step(3,8)" id="ansver38"><i class="far fa-circle"></i>Да, но не более 10 сигарет
                     ежедневно</div>
-                <div onclick="test_step(3,11)" id="ansver311"><i class="fa fa-circle-o"></i>Да, но не более двадцати
+                <div onclick="test_step(3,11)" id="ansver311"><i class="far fa-circle"></i>Да, но не более двадцати
                     сигарет в день</div>
-                <div onclick="test_step(3,14)" id="ansver314"><i class="fa fa-circle-o"></i>Да, больше двадцати</div>
+                <div onclick="test_step(3,14)" id="ansver314"><i class="far fa-circle"></i>Да, больше двадцати</div>
             </div>
-            <div class="nextblock" onclick="gotostep('4')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('4')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
         <div id="step4">
             <div class="linesteps">
-                <div class="pic">4</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">За день я выпиваю больше двух кружек пива (бокалов вина, рюмок водки)</div>
             <div class="ansver" id="ansver4">
-                <div onclick="test_step(4,0)" id="ansver40"><i class="fa fa-circle-o"></i>Нет, за редким исключением
+                <div onclick="test_step(4,0)" id="ansver40"><i class="far fa-circle"></i>Нет, за редким исключением
                 </div>
-                <div onclick="test_step(4,2)" id="ansver42"><i class="fa fa-circle-o"></i>Да, такое происходит довольно
+                <div onclick="test_step(4,2)" id="ansver42"><i class="far fa-circle"></i>Да, такое происходит довольно
                     часто</div>
-                <div onclick="test_step(4,4)" id="ansver44"><i class="fa fa-circle-o"></i>Да, я почти ежедневно выпиваю
+                <div onclick="test_step(4,4)" id="ansver44"><i class="far fa-circle"></i>Да, я почти ежедневно выпиваю
                     даже больше</div>
             </div>
-            <div class="nextblock" onclick="gotostep('5')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('5')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
 
         <div id="step5">
             <div class="linesteps">
-                <div class="pic">2</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Я ужасно устаю от перегрузок на работе и дома. Порой почти дохожу до нервного срыва.
             </div>
             <div class="ansver" id="ansver5">
-                <div onclick="test_step(5,0)" id="ansver50"><i class="fa fa-circle-o"></i>Нет, такое случается крайне
+                <div onclick="test_step(5,0)" id="ansver50"><i class="far fa-circle"></i>Нет, такое случается крайне
                     редко</div>
-                <div onclick="test_step(5,2)" id="ansver52"><i class="fa fa-circle-o"></i>Да, время от времени такое
+                <div onclick="test_step(5,2)" id="ansver52"><i class="far fa-circle"></i>Да, время от времени такое
                     бывает</div>
-                <div onclick="test_step(5,4)" id="ansver54"><i class="fa fa-circle-o"></i>Да, я просто живу в состоянии
+                <div onclick="test_step(5,4)" id="ansver54"><i class="far fa-circle"></i>Да, я просто живу в состоянии
                     перегрузок, и ничего не могу изменить</div>
             </div>
-            <div class="nextblock" onclick="gotostep('6')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('6')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
         <div id="step6">
             <div class="linesteps">
-                <div class="pic">6</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Я постоянно тревожусь о завтрашнем дне, боюсь неприятностей, которые он может
                 принести.</div>
             <div class="ansver" id="ansver6">
-                <div onclick="test_step(6,0)" id="ansver60"><i class="fa fa-circle-o"></i>Нет, я вполне уравновешен
+                <div onclick="test_step(6,0)" id="ansver60"><i class="far fa-circle"></i>Нет, я вполне уравновешен
                 </div>
-                <div onclick="test_step(6,2)" id="ansver62"><i class="fa fa-circle-o"></i>Не всегда, но довольно часто
+                <div onclick="test_step(6,2)" id="ansver62"><i class="far fa-circle"></i>Не всегда, но довольно часто
                 </div>
-                <div onclick="test_step(6,4)" id="ansver64"><i class="fa fa-circle-o"></i>Да, я уже давно испытываю
+                <div onclick="test_step(6,4)" id="ansver64"><i class="far fa-circle"></i>Да, я уже давно испытываю
                     душевные муки</div>
             </div>
-            <div class="nextblock" onclick="gotostep('7')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('7')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
 
         <div id="step7">
             <div class="linesteps">
-                <div class="pic">7</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">У моих родных артериальное давление повышено</div>
             <div class="ansver" id="ansver7">
-                <div onclick="test_step(7,0)" id="ansver70"><i class="fa fa-circle-o"></i>Нет, во всяком случае, я об
+                <div onclick="test_step(7,0)" id="ansver70"><i class="far fa-circle"></i>Нет, во всяком случае, я об
                     этом не знаю</div>
-                <div onclick="test_step(7,2)" id="ansver72"><i class="fa fa-circle-o"></i>Да, этим страдал один из
+                <div onclick="test_step(7,2)" id="ansver72"><i class="far fa-circle"></i>Да, этим страдал один из
                     родителей</div>
-                <div onclick="test_step(7,4)" id="ansver74"><i class="fa fa-circle-o"></i>Да, у обоих родителей и (или)
+                <div onclick="test_step(7,4)" id="ansver74"><i class="far fa-circle"></i>Да, у обоих родителей и (или)
                     у братьев и сестер</div>
             </div>
-            <div class="nextblock" onclick="gotostep('8')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('8')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
         <div id="step8">
             <div class="linesteps">
-                <div class="pic">8</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">У меня частенько болит голова, порой она словно свинцом налита.</div>
             <div class="ansver" id="ansver8">
-                <div onclick="test_step(8,0)" id="ansver80"><i class="fa fa-circle-o"></i>Нет, этого почти не случается
+                <div onclick="test_step(8,0)" id="ansver80"><i class="far fa-circle"></i>Нет, этого почти не случается
                 </div>
-                <div onclick="test_step(8,2)" id="ansver82"><i class="fa fa-circle-o"></i>Нечасто, хотя и чаще, чем
+                <div onclick="test_step(8,2)" id="ansver82"><i class="far fa-circle"></i>Нечасто, хотя и чаще, чем
                     раньше</div>
-                <div onclick="test_step(8,4)" id="ansver84"><i class="fa fa-circle-o"></i>Да, часто</div>
+                <div onclick="test_step(8,4)" id="ansver84"><i class="far fa-circle"></i>Да, часто</div>
             </div>
-            <div class="nextblock" onclick="gotostep('9')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('9')">Далее</div>
             <div class="clearfix"></div>
         </div>
         <div id="step9">
             <div class="linesteps">
-                <div class="pic">9</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Здоровый сон для меня — несбыточная мечта.</div>
             <div class="ansver" id="ansver9">
-                <div onclick="test_step(9,0)" id="ansver90"><i class="fa fa-circle-o"></i>Нет, я хорошо сплю</div>
-                <div onclick="test_step(9,2)" id="ansver92"><i class="fa fa-circle-o"></i>По-разному: иногда сразу
+                <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i>Нет, я хорошо сплю</div>
+                <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i>По-разному: иногда сразу
                     засыпаю, иногда мучаюсь</div>
-                <div onclick="test_step(9,4)" id="ansver94"><i class="fa fa-circle-o"></i>Я плохо засыпаю и вынужден
+                <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i>Я плохо засыпаю и вынужден
                     принимать снотворное</div>
             </div>
-            <div class="nextblock" onclick="gotostep('10')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('10')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
@@ -167,38 +167,38 @@ get_header();  ?>
 
         <div id="step10">
             <div class="linesteps">
-                <div class="pic">10</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Даже при небольших нагрузках и в состоянии покоя у меня
                 случается сильное сердцебиение, порой с перебоями.</div>
             <div class="ansver" id="ansver100">
-                <div onclick="test_step(10,0)" id="ansver1000"><i class="fa fa-circle-o"></i>Нет, у меня никогда не было
+                <div onclick="test_step(10,0)" id="ansver1000"><i class="far fa-circle"></i>Нет, у меня никогда не было
                     таких проблем</div>
-                <div onclick="test_step(10,2)" id="ansver1002"><i class="fa fa-circle-o"></i>Да, у меня это случается,
+                <div onclick="test_step(10,2)" id="ansver1002"><i class="far fa-circle"></i>Да, у меня это случается,
                     но редко и не интенсивно</div>
-                <div onclick="test_step(10,6)" id="ansver1006"><i class="fa fa-circle-o"></i>Да, все чаще и тревожнее
+                <div onclick="test_step(10,6)" id="ansver1006"><i class="far fa-circle"></i>Да, все чаще и тревожнее
                 </div>
             </div>
-            <div class="nextblock" onclick="gotostep('11')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('11')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
 
         <div id="step11">
             <div class="linesteps">
-                <div class="pic">11</div>
+                <div class="pic"><div class="pic-inner"></div></div>
             </div>
             <div class="questtxt">Я человек активный, даже неугомонный. Только и жду
                 задач, требующих решения!</div>
             <div class="ansver" id="ansver11">
-                <div onclick="test_step(11,0)" id="ansver110"><i class="fa fa-circle-o"></i>Нет, я себя не отношу к
+                <div onclick="test_step(11,0)" id="ansver110"><i class="far fa-circle"></i>Нет, я себя не отношу к
                     таковым</div>
-                <div onclick="test_step(11,2)" id="ansver112"><i class="fa fa-circle-o"></i>Да, я, скорее, заводной, чем
+                <div onclick="test_step(11,2)" id="ansver112"><i class="far fa-circle"></i>Да, я, скорее, заводной, чем
                     спокойный, но могу заставить себя и отключиться</div>
-                <div onclick="test_step(11,4)" id="ansver114"><i class="fa fa-circle-o"></i>Да, я постоянно в заведенном
+                <div onclick="test_step(11,4)" id="ansver114"><i class="far fa-circle"></i>Да, я постоянно в заведенном
                     состоянии, часто до полного изнеможения</div>
             </div>
-            <div class="nextblock" onclick="gotostep('12')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('12')">Далее</div>
             <div class="clearfix"></div>
         </div>
 
@@ -247,7 +247,7 @@ get_header();  ?>
                 необходимо
                 заботиться о собственном здоровье.
             </div>
-            <div class="nextblock"><a href="http://panangin.com.ua/heart-health/test/">В начало</a></div>
+            <a class="nextblock button button-primary" style="margin-top: 40px;" href="http://localhost:8888/panangin/test/">В начало</a>
             <div class="clearfix"></div>
 
         </div>
@@ -269,7 +269,46 @@ get_header();  ?>
 
 
 </div>
+<section>
+    <div class="page__heading">Корисні поради</div>
+        <div class="container">
+            <ul class="row blog__row">
 
+                <?php 
+                $args = array(
+                    'posts_per_page' => 3,
+                );    
+                $query = new WP_Query( $args ); ?>
+                    <?php if ( $query->have_posts() ) : ?>
+	                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <li class=" blog__item col-lg-4 col-md-6 col-sm-6">
+                                <div class="blog__itemInner">
+                                    <div class="blog__itemImageWrapper">
+                                        <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+                                    </div>
+                                    <div class="blog__itemContent">
+                                        <h5>
+                                            <?php the_title(); ?>
+                                        </h5>
+                                        <a class="blog-button" href="<?php echo get_the_permalink(); ?>">Читати далі <svg width="17" height="15"
+                                                viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.75 7.72559L0.75 7.72559" stroke="#58585B" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.7002 1.70124L15.7502 7.72524L9.7002 13.7502" stroke="#58585B"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <?php else : ?>
+                <p><?php esc_html_e( 'Нет постов по вашим критериям.' ); ?></p>
+            <?php endif; ?>                
+        </ul>
+    </div>
+</section>
 <?php get_footer(); ?>
 
 <script>
@@ -362,302 +401,15 @@ get_header();  ?>
     function test_step(step, nomid) {
         stepid = step;
         if (step == 10) stepid = 100;
-        jQuery('#ansver' + stepid + ' i').removeClass('fa-check-circle-o');
-        jQuery('#ansver' + stepid + ' i').addClass('fa-circle-o');
-        jQuery('#ansver' + stepid + nomid + ' i').removeClass('fa-circle-o');
-        jQuery('#ansver' + stepid + nomid + ' i').addClass('fa-check-circle-o');
+        jQuery('#ansver' + stepid + ' i').removeClass(' far fa-dot-circle');
+        jQuery('#ansver' + stepid + ' i').addClass('far fa-circle');
+        jQuery('#ansver' + stepid + nomid + ' i').removeClass('far fa-circle ');
+        jQuery('#ansver' + stepid + nomid + ' i').addClass('far fa-dot-circle');
         jQuery('#valstep' + step).val(nomid);
     }
 </script>
 
 
 <style>
-    .testnext {
-        display: inline-block;
-        height: 64px;
-        line-height: 64px;
-        padding: 0px 98px 0px 30px;
-        position: relative;
-        text-decoration: none;
-        font-size: 22px;
-        color: #005aaa;
-        font-family: 'FuturaPT-Bold', arial, helvetica, sans;
-    }
 
-    .testnext:after {
-        position: Absolute;
-        text-align: center;
-        font-size: 30px;
-        right: 0px;
-        top: 0px;
-        height: 68px;
-        width: 68px;
-        background: #fbfbfb;
-        content: "\f105";
-        font-family: 'FontAwesome';
-    }
-
-    .testnext:hover {
-        background: #fbfbfb;
-    }
-
-    .linesteps {
-        position: relative;
-        height: 37px;
-        z-index: 3;
-    }
-
-    .linesteps:after {
-        height: 3px;
-        background: #d1d2d3;
-        position: absolute;
-        top: 17px;
-        left: 0px;
-        right: 0px;
-        content: '';
-        z-index: 2;
-    }
-
-    .linesteps:before {
-        z-index: 4;
-        left: 0px;
-        top: 17px;
-        height: 3px;
-        background: #ed145b;
-        position: absolute;
-        content: '';
-    }
-
-    .linesteps .pic {
-        width: 37px;
-        height: 37px;
-        background: #ed145b;
-        color: #FFFFFF;
-        font-size: 22px;
-        line-height: 37px;
-        text-align: Center;
-        -webkit-border-radius: 18px;
-        z-index: 10;
-        position: relative;
-        -moz-border-radius: 18px;
-        border-radius: 18px;
-        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .steps {
-        position: relative;
-    }
-
-
-    .nextblock {
-        float: right;
-        display: inline-block;
-        height: 64px;
-        line-height: 64px;
-        padding: 0px 98px 0px 30px;
-        position: relative;
-        text-decoration: none;
-        font-size: 22px;
-        color: #005aaa;
-        font-family: 'FuturaPT-Bold', arial, helvetica, sans;
-    }
-
-    .nextblock:before {
-        position: Absolute;
-        text-align: center;
-        font-size: 30px;
-        right: 0px;
-        top: 0px;
-        height: 68px;
-        width: 68px;
-        background: #fbfbfb;
-        content: "\f105";
-        font-family: 'FontAwesome';
-    }
-
-    .nextblock:hover {
-        background: #fbfbfb;
-        cursor: pointer;
-    }
-
-    .nextblock:after {
-        content: '';
-        display: table;
-        clear: both;
-        width: 100%;
-        height: 1px;
-    }
-
-    .nextblock a {
-        text-decoration: None;
-        color: #005aaa;
-    }
-
-    .steps .ansver div {
-        padding: 5px 0px;
-    }
-
-    .steps .ansver div i {
-        font-size: 18px;
-        margin-right: 10px;
-    }
-
-    .steps .questtxt {
-        max-width: 600px;
-    }
-
-    .steps .ansver {
-        max-width: 600px;
-        margin: 20px 0px;
-    }
-
-
-    #step1 .linesteps .pic {
-        margin-left: 9%;
-    }
-
-    #step1 .linesteps:before {
-        width: 9%;
-    }
-
-    #step2 .linesteps .pic {
-        margin-left: 18%;
-    }
-
-    #step2 .linesteps:before {
-        width: 18%;
-    }
-
-    #step3 .linesteps .pic {
-        margin-left: 27%;
-    }
-
-    #step3 .linesteps:before {
-        width: 27%;
-    }
-
-    #step4 .linesteps .pic {
-        margin-left: 36%;
-    }
-
-    #step4 .linesteps:before {
-        width: 36%;
-    }
-
-    #step5 .linesteps .pic {
-        margin-left: 45%;
-    }
-
-    #step5 .linesteps:before {
-        width: 45%;
-    }
-
-    #step6 .linesteps .pic {
-        margin-left: 54%;
-    }
-
-    #step6 .linesteps:before {
-        width: 54%;
-    }
-
-    #step7 .linesteps .pic {
-        margin-left: 63%;
-    }
-
-    #step7 .linesteps:before {
-        width: 63%;
-    }
-
-    #step8 .linesteps .pic {
-        margin-left: 72%;
-    }
-
-    #step8 .linesteps:before {
-        width: 72%;
-    }
-
-    #step9 .linesteps .pic {
-        margin-left: 81%;
-    }
-
-    #step9 .linesteps:before {
-        width: 81%;
-    }
-
-    #step10 .linesteps .pic {
-        margin-left: 90%;
-    }
-
-    #step10 .linesteps:before {
-        width: 90%;
-    }
-
-    #step11 .linesteps .pic {
-        margin-left: 99%;
-    }
-
-    #step11 .linesteps:before {
-        width: 99%;
-    }
-
-    #step1,
-    #step2,
-    #step3,
-    #step4,
-    #step5,
-    #step6,
-    #step7,
-    #step8,
-    #step9,
-    #step10,
-    #step11,
-    #step12 {
-        -moz-transition: right .75s ease-out, width 0s linear .75s;
-        -o-transition: right .75s ease-out, width 0s linear .75s;
-        -webkit-transition: right .75s ease-out, width 0s linear;
-        -webkit-transition-delay: 0s, .75s;
-        transition: right .75s ease-out, width 0s linear .75s;
-        -moz-transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        right: -100%;
-        display: none;
-        width: 0px
-    }
-
-    .step_active {
-        -o-transition: right .75s ease-out, width 0s linear 0s;
-        -webkit-transition: right .75s ease-out, width 0s linear;
-        -webkit-transition-delay: 0s, 0s;
-        transition: right .75s ease-out, width 0s linear 0s;
-        left: 0px !important;
-        right: auto !important;
-        width: 100% !important;
-        display: block !important;
-    }
-
-    .otvet {
-        max-width: 600px;
-        display: none;
-    }
-
-    #step12 h2 {
-        text-align: left !important;
-    }
-
-    .gologotop {
-        cursor: pointer;
-    }
-
-    .reakziya {
-        font-size: 16px;
-        line-height: 20px;
-        color: #939597;
-        text-decoration: none;
-        display: block;
-        margin-top: 20px;
-        float: right;
-    }
 </style>
