@@ -24,6 +24,7 @@
             <?php if( $contentCTA ) : ?> 
             <div class="cta__content col-lg-6">
                 <?php echo $contentCTA ?>
+                <a href="<?php echo esc_url( $buttonCTA['url'] ); ?>" class="button button-primary"><?php echo esc_html( $buttonCTA['title'] ); ?></a>
             </div>
             
             <?php endif; ?>

@@ -58,7 +58,7 @@ endif; ?>
             <?php endif; ?>                
         </ul>
         <div class="blog__buttonWrapper">
-            <a href="#" class="button button__blue">Всі новини</a>
+            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary">Всі новини</a>
         </div>
     </div>
 </section>

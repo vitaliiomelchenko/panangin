@@ -247,7 +247,7 @@ get_header();  ?>
                 необходимо
                 заботиться о собственном здоровье.
             </div>
-            <a class="nextblock button button-primary" style="margin-top: 40px;" href="http://localhost:8888/panangin/test/">В начало</a>
+            <a class="nextblock button button-primary" style="margin-top: 40px;" href="https://panangin.levelmedia.com.ua/test-nachalo/">В начало</a>
             <div class="clearfix"></div>
 
         </div>
@@ -307,6 +307,9 @@ get_header();  ?>
                 <p><?php esc_html_e( 'Нет постов по вашим критериям.' ); ?></p>
             <?php endif; ?>                
         </ul>
+        <div class="blog__buttonWrapper">
+            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary">Всі новини</a>
+        </div>
     </div>
 </section>
 <?php get_footer(); ?>
