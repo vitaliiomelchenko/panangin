@@ -74,25 +74,67 @@ body
 .faq__formWrapper
     max-width: 367px
 .faq
+    &__title
+        text-decoration: none
     &__item
         position: relative
         background: #FFFFFF
         box-shadow: 0px 7px 15px rgba(0, 84, 166, 0.15)
         border-radius: 10px
-        padding:  20px 110px  20px 30px 
+        padding:  20px 30px 20px 30px 
         margin-bottom: 15px
+        &:hover
+            cursor: pointer
     &__text
         font-weight: 600
-        font-size: 22px
+        font-size: 20px
         line-height: 140%
         color: #58585B
         text-decoration: none
+        padding-right: 60px
+        position: relative
+        display: block
+    &__active
+        .faq__symbol
+            button 
+                span 
+                    transform: rotate(90deg)
+                    &:last-child
+                        left: 50%
+                        right: 50%
+
+
     &__symbol
+        display: flex
         position: absolute
-        right: 28px
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
         font-weight: 300
         font-size: 50px
-        color: #ED135A
+        color: $color-secondary
+        button
+            background: transparent
+            width: 40px
+            height: 40px
+            border: 0
+            font-size: 1.5em
+            position: relative
+            span
+                position: absolute
+                transition: 300ms
+                background: $color-secondary
+                border-radius: 2px
+                &:first-child
+                    top: 25%
+                    bottom: 25%
+                    width: 5%
+                    left: 48%
+                &:last-child
+                    left: 25%
+                    right: 25%
+                    height: 5%
+                    top: 48%
     &__content
         font-size: 20px
         line-height: 140%
