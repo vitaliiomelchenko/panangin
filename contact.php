@@ -2,6 +2,11 @@
     /* Template Name: Контакти */
 ?>
 <?php get_header(); ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
 <?php
     $headingContact = get_field('headingContact');
     $contactFormContact = get_field('contactFormContact');

@@ -5,7 +5,11 @@
  */
 
 get_header();  ?>
-
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
 <div class="test-home container test-wrapper" style="margin-bottom: 70px">
 
     <div class="steps">

@@ -2,6 +2,11 @@
 /* Template Name: Текст-форте */
 ?>
 <?php get_header(); ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
     <section class="instructions">
         <div class="container">
             <div class="text-block-forte">

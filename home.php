@@ -1,5 +1,10 @@
 
 <?php get_header(); ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
 <section>
     <div class="page__heading">Корисні поради</div>
         <div class="container">
