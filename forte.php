@@ -39,7 +39,7 @@
             <?php endif; ?>
             <?php if( !empty( $forteHeroImage ) ): ?>
                 <div class="col-lg-6 hero__imageWrapper">
-                    <?php echo file_get_contents(esc_url(wp_get_original_image_path($forteHeroImage['id']))); ?>    
+                    <img src="<?php echo $forteHeroImage['url']; ?>">
                 </div>
             <?php endif; ?>
         </div>
