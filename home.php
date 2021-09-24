@@ -46,7 +46,7 @@
 			<?php
 			$amount = $query->found_posts;
 			$args = [
-                                        'base'         => '/корисні-поради/page/%#%',
+                                        'base'         => '/korisni-poradi/page/%#%',
                                         'format'       => '',
                                         'total'        => ceil($amount / $postsPerPage),
                                         'current'      => max(1, get_query_var('paged')),
