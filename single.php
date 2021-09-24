@@ -6,7 +6,7 @@
             </div>
             <div class="single-post__contentWrapper">
                 <p><strong> <?php the_title(); ?></strong></p>
-                <p class="single-post__date"><?php echo get_the_date('n-j-Y'); ?></p>
+                <p class="single-post__date"><?php echo get_the_date('j F Y'); ?></p>
                 <p>
                     <?php the_content(); ?>
                 </p>
