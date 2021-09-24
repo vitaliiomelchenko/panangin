@@ -11,6 +11,7 @@
                     404
             </div> 
         <p class="error__message">Вибачте! Сторінка, яку Ви шукаєте, не може бути знайдена</p>
+        <div class="error__button"><a class="button" href="<?php echo get_home_url() ?>">На головну</a></div>
         </div>
     </section>       
 <?php get_footer(); ?>

@@ -2,16 +2,77 @@
     position: relative
     margin-top: 200px
     margin-bottom: 200px
+    +max-screen(768px )
+        margin-top: 47px 
+        margin-bottom: 50px 
+    .container 
+        display: flex 
+        flex-direction: column
     &__content
         font-weight: bold
         font-size: 96px
         line-height: 123px
         letter-spacing: 0.15em
         color: #0054A6
+        +min-screen(769px)
+            text-align: center
+            width: 100%
+            max-width: 75% 
+            margin-left: auto
+            +min-screen(1200px)
+                margin-right: 145px 
+        +max-screen( 768px )
+            font-size: 48px 
+            line-height: 1.3
+            order: -1
+            text-align: center
+            margin-bottom: 30px 
     &__background
         position: absolute
+        z-index: -1
+        svg 
+            max-width: 100%
+            height: auto
+        +max-screen( 991px)
+            +min-screen(769px)
+                svg
+                    height: 228px
+        +max-screen(768px)
+            text-align: center
+            position: static
+            svg
+                max-width: 343px 
+                width: 100%
+                max-height: 80px 
+                height: auto 
     &__message
-        font-size: 22px !important
-        line-height: 130% !important
-        text-align: center !important
-        color: #0054A6 !important
+        font-size: 22px 
+        line-height: 135% 
+        text-align: center 
+        color: #0054A6 
+        +min-screen(769px)
+            width: 100%
+            max-width: 75% 
+            margin-left: auto
+            +min-screen(1200px)
+                margin-right: 145px 
+        +max-screen(768px )
+            margin-top: 30px 
+            margin-bottom: 30px 
+    &__button 
+        text-align: center
+        +min-screen(769px)
+            width: 100%
+            max-width: 75% 
+            margin-left: auto
+            +min-screen(1200px)
+                margin-right: 145px 
+        .button 
+            font-size: 18px
+            padding: 16.5px 37.5px 
+            border: 1.5px solid #0054A6
+            border-radius: 50px
+            line-height: 1.1
+            display: inline-block
+            color: #0054A6
+            z-index: 2
