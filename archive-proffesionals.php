@@ -2,7 +2,11 @@
 <?php
 /* Template Name: Для специалистов*/
 ?>
-<body>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
     <section class="professinals">
         <div class="container">
             <div class="page__heading">Статті для фахівців</div>

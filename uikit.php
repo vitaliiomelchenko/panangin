@@ -4,6 +4,11 @@
 Template Name: UiKit
 */
 ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
 <div class="container">
     <a href="#" class="button button-primary" style="margin-bottom: 20px">Кнопка</a>
     <a href="#" class="button button-secondary" style="margin-bottom: 20px">Кнопка</a>

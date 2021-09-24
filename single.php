@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
+    </div>
+</div>
 <section class="single-post">
         <div class="container">
             <div class="single-post__image">
