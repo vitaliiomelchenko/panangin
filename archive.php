@@ -6,7 +6,7 @@
     </div>
 </div>
 <section>
-    <div class="page__heading">Корисні поради</div>
+    <div class="page__heading"><?php printf( _e('Корисні поради', 'panangin'))?></div>
         <div class="container">
             <ul class="row blog__row">
 

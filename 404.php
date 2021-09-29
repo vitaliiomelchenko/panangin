@@ -10,8 +10,8 @@
             <div class="col-lg-6 offset-lg-5 error__content">
                     404
             </div> 
-        <p class="error__message">Вибачте! Сторінка, яку Ви шукаєте, не може бути знайдена</p>
-        <div class="error__button"><a class="button" href="<?php echo get_home_url() ?>">На головну</a></div>
+        <p class="error__message"><?php printf( _e('Вибачте! Сторінка, яку Ви шукаєте, не може бути знайдена', 'panangin'))?></p>
+        <div class="error__button"><a class="button" href="<?php echo get_home_url() ?>"><?php printf( _e('На головну', 'panangin'))?></a></div>
         </div>
     </section>       
 <?php get_footer(); ?>
