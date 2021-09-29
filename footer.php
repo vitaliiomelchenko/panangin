@@ -63,6 +63,9 @@
         </div>
     </section>
     </section>
+    <section class="created" style="background: #0054A6;padding: 13px;">
+        <p style="text-align: center;">Created by Level Media</p>
+    </section>
 </footer>
 
 	<?php wp_footer(); ?>
