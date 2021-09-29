@@ -9,7 +9,7 @@
 </div>
     <section class="professinals">
         <div class="container">
-            <div class="page__heading"><?php printf( _e('Статті для фахівців', 'panangin'))?></div>
+            <div class="page__heading"><?php printf( _e('Статті для фахівців', 'Panangin'))?></div>
             <ul class="professionals-post__list">
                 <?php
 

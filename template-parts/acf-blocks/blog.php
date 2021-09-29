@@ -1,5 +1,5 @@
 <section>
-    <div class="page__heading"><?php printf( _e('Корисні поради', 'panangin'))?></div>
+    <div class="page__heading"><?php printf( _e('Корисні поради', 'Panangin'))?></div>
         <div class="container">
             <ul class="row blog__row">
 
@@ -37,7 +37,7 @@
             <?php endif; ?>                
         </ul>
         <div class="button-wrapper">
-            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary"><?php printf( _e('Всі новини', 'panangin'))?></a>
+            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary"><?php printf( _e('Всі новини', 'Panangin'))?></a>
         </div>
     </div>
 </section>
