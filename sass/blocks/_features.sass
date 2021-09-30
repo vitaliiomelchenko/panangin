@@ -1,6 +1,9 @@
 .features
     position: relative
-    margin-bottom: 70px
+    margin-bottom: 70px 
+    +max-screen(768px)
+        overflow: hidden
+        margin-bottom: 30px 
     &__background
         img
             position: absolute
@@ -14,11 +17,18 @@
         max-width: 740px
         margin-left: auto
         margin-right: auto
-        h2
-            color: $color-primary
-            margin-bottom: 30px
+        h1 
+            color: #58585b
         p 
             margin-bottom: 0
+            font-size: 22px 
+        +max-screen(768px)
+            margin-bottom: 13px 
+            h1
+                margin-bottom: 30px
+                font-size: 32px
+            p 
+                font-size: 20px 
     &__row
         justify-content: center
     &__item
@@ -30,9 +40,19 @@
         list-style: none
         text-align: center
         margin-bottom: 87px
+        +max-screen(768px)
+            margin-bottom: 0
+            p 
+                margin-top: 10px 
+                margin-bottom: 20px 
+                margin-right: 0
         &Image
             &Wrapper
                 position: relative
+                +max-screen(768px)
+                    img
+                        margin-top: -10px 
+                        margin-bottom: -24px 
             
         &Row
             &__right
@@ -40,11 +60,15 @@
                 flex-direction: column
                 justify-content: center
                 align-items: center
+                +max-screen(768px)
+                    margin-bottom: 9px 
             &__left
                 display: flex
                 flex-direction: column
                 justify-content: center
                 align-items: center
+                +max-screen(768px)
+                    margin-bottom: 0
     &__buttonWrapper
         display: flex
         align-items: center
@@ -62,6 +86,10 @@
             +max-screen($breakpoint-md)
                 align-self: center
 .features__imageMobile
+    list-style-type: none
+    margin-bottom: 14px 
+    img 
+        min-height: 251px 
     +min-screen($breakpoint-md)
         display: none
 .features__leftTopDecoration,
@@ -86,4 +114,26 @@
         top: 500px
         left: -45px
 
-
+.features__leftTopDecoration
+    +max-screen(768px)
+        width: 132px
+        height: 104px 
+        left: -66px 
+        top: 389px
+.features__leftBottomDecoration
+    +max-screen(768px)
+        top: 50% 
+        transform: translateY(-50%)
+        left: -13px 
+.features__rightBottomDecoration
+    +max-screen(768px)
+        bottom: 35% 
+        right: 7px 
+        width: 48px 
+        height: 43px
+.features__rightTopDecoration 
+    +max-screen(768px)
+        top: 182px 
+        width: 105px
+        height: 77px
+        right: -22px

@@ -5,6 +5,11 @@
     &__heading
         margin-bottom: 80px
         text-align: center
+        +max-screen(768px)
+            margin-bottom: 60px 
+            padding: 0
+            h2
+                font-size: 32px
     &__item
         list-style: none
         text-align: center
@@ -21,6 +26,10 @@
                 margin-bottom: 50px
             +max-screen($breakpoint-md)
                 margin-bottom: 50px
+            +max-screen(768px)
+                padding-bottom: 13px 
+                margin-bottom: 0 
+                min-height: auto
         &Image
             position: relative
             margin-top: -40px
@@ -45,5 +54,10 @@
             p
                 margin-top: 10px
                 margin-bottom: 0
-                
+                font-size: 20px 
+        &:last-child
+            +max-screen(768px)
+                margin-bottom: 0
+                .auditory__itemInner 
+                    padding-bottom: 23px 
         

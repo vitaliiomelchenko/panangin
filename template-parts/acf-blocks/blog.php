@@ -1,4 +1,4 @@
-<section>
+<section class="posts_block">
     <?php 
     if( get_locale() == 'uk'){
         $blockTitle = 'Корисні поради';

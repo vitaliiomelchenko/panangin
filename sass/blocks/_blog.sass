@@ -66,3 +66,41 @@
 .blog-button
     position: absolute
     bottom: 63px
+.posts_block
+    +max-screen(768px)
+        .page__heading
+            font-size: 32px
+            margin-top: 51px
+            margin-bottom: 51px 
+        .blog__item
+            &:last-child
+                margin-bottom: 0
+        .blog__row
+            margin-bottom: 30px 
+        .blog__itemImageWrapper
+            margin-bottom: 15px 
+        .blog__itemContent
+            padding-left: 19px 
+            padding-right: 19px 
+            padding-bottom: 20px 
+            h5 
+                margin-bottom: 30px 
+            .blog-button
+                background: #0054a6
+                border-radius: 50px
+                color: #fff
+                font-weight: 600 
+                padding: 15px 59px 17px 22px 
+                display: inline-block
+                position: relative
+                bottom: auto 
+                svg 
+                    position: absolute
+                    right: 21px
+                    top: 50% 
+                    transform: translateY(-50%)
+                    path 
+                        stroke: #fff
+
+
+        

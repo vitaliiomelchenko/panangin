@@ -31,7 +31,7 @@
                         <li class="features__item">
                             <?php if( !empty( $itemImageLeftColFeatures ) ): ?>
                                 <div class="features__itemImageWrapper">
-                                    <?php echo file_get_contents(esc_url(wp_get_original_image_path($itemImageLeftColFeatures['id']))); ?>
+                                    <img src="<?php echo $itemImageLeftColFeatures['url']; ?>">
                                 </div>
                             <?php endif; ?>
                             <?php if( $itemContentLeftColFeatures ) : ?>
@@ -52,7 +52,7 @@
                         <li class="features__item">
                             <?php if( !empty( $itemImageRightColFeatures ) ): ?>
                                 <div class="features__itemImageWrapper">
-                                    <?php echo file_get_contents(esc_url(wp_get_original_image_path($itemImageRightColFeatures['id']))); ?>
+                                    <img src="<?php echo $itemImageRightColFeatures['url']; ?>">
                                 </div>
                             <?php endif; ?>
                             <?php if( $itemContentRightColFeatures ) : ?>
