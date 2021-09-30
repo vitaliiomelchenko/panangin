@@ -36,6 +36,13 @@ header
       margin-right: 0
     +max-screen($breakpoint-lg)
       display: none
+    .menu-item.button--cta  
+      padding: 0 
+      background-color: transparent 
+      a 
+        background: #ed135a
+        border-radius: 5px
+        padding: 3px 14px
   &.menu-active
     .header
       &__menu__row
@@ -47,11 +54,22 @@ header
         margin: 0
         height: calc(100vh - 98px)
         z-index: 999
-        display: block
         display: flex
-        flex-direction: column
         align-items: center
         justify-content: center
+        align-content: center
+      &__menu__row
+        +max-screen(768px)
+          flex-direction: row 
+          .menu-item
+            width: 100% 
+            text-align: center
+            &:nth-last-of-type( -n + 2 )
+              width: 50% 
+            &:last-of-type
+              text-align: left
+            &:nth-last-of-type(2)
+              text-align: right
       &__menuItem
         margin-right: 0
         margin-bottom: 30px

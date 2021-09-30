@@ -1,14 +1,18 @@
 .cta
     margin-bottom: 92px
     position: relative
-    +max-screen($breakpoint-lg)
-        display: none
+    +max-screen(768px)
+        overflow-x: hidden
+        margin-bottom: 0
+        padding-bottom: 58px
+        padding-left: 16px
+        padding-right: 16px 
     &__row
         background: #f2f6fb
         border-radius: 10px
         position: relative
     &__content
-        padding: 60px !important
+        padding: 60px 
         padding-right: 0
         h2
             color: #58585B
@@ -20,6 +24,22 @@
                 color: $color-secondary
         p
             margin-bottom: 45px
+        +max-screen(768px)
+            padding: 20px 
+            padding-bottom: 24px
+            h2 
+                font-size: 28px 
+                margin-bottom: 20px 
+            p 
+                margin-bottom: 24px
+                margin-top: 0
+                &:last-of-type
+                    margin-bottom: 0 
+            a 
+                margin-top: 20px 
+                margin-left: 0
+                paddong: 14px 52px 18px 
+                margin-bottom: 0
     &__image
         img
             border-radius: 10px
@@ -33,6 +53,8 @@
         position: absolute
         top: -35px
         left: 580px
+        +max-screen($breakpoint-lg)
+            display: none
 .cta
     .button__red
         margin-left: 0
@@ -44,9 +66,17 @@
     bottom: -11px
     left: 160px
     z-index: 1
+    +max-screen(768px)
+        right: -4px 
+        width: 62px
+        height: 46px 
+        bottom: 45px  
+        left: auto
 .cta__leftBottomDecoration
     position: absolute
     top: 25px
     z-index: 1
     right: 160px
+    +max-screen(768px)
+        display: none
 
