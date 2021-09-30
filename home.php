@@ -5,8 +5,18 @@
         <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
     </div>
 </div>
+<?php 
+    if( get_locale() == 'uk'){
+        $blogTitle = 'Корисні поради';
+
+    }   
+    elseif(get_locale() == 'ru_RU'){
+        $blogTitle = 'Полезные советы';
+
+    }
+    ?>
 <section>
-    <div class="page__heading">Корисні поради</div>
+    <div class="page__heading"><?php echo $blogTitle ?></div>
         <div class="container">
             <ul class="row blog__row">
 
