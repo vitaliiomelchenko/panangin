@@ -463,7 +463,6 @@
         <div class="container">
             <div class="row forte__cta__row">
                 <div class="col-lg-auto forte__cta__content">
-                <div class="col-lg-auto forte__cta__content">
                     <h1>
                         <?php echo $ctaTitle1 ?>
                         <span>
