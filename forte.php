@@ -91,7 +91,7 @@
     $forteActionContent_4 = get_field('forteActionContent_4');
     $forteActionAdditionalContent = get_field('forteActionAdditionalContent');
 ?>
-   <section id="action" class="action" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/подложка.png);">
+   <section id="action" class="action" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/подложка.png); background-repeat: no-repeat;">
         <div class="container">
             <?php if($forteActionTitle) : ?>
                 <h1 class="forte__action__title"><?php echo $forteActionTitle ?></h1>
