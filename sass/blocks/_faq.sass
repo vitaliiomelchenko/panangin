@@ -85,6 +85,8 @@ body
         border-radius: 10px
         padding:  20px 30px 20px 30px 
         margin-bottom: 15px
+        +max-screen($breakpoint-md)
+            padding: 11px 15px
         &:hover
             cursor: pointer
     &__text
@@ -96,6 +98,8 @@ body
         padding-right: 60px
         position: relative
         display: block
+        +max-screen($breakpoint-md)
+            padding-right: 40px
     &__active
         .faq__symbol
             button 
