@@ -7,9 +7,20 @@
         <?php echo do_shortcode('[wpseo_breadcrumb]') ?>
     </div>
 </div>
+    <?php 
+        if(get_locale() == 'uk'){
+            $pageTitle = 'Статті для фахівців';
+            $readMoreButton = 'Читати далі';
+
+        }
+        elseif(get_locale() == 'ru_RU'){
+            $pageTitle = 'Статьи для специалистов';
+            $readMoreButton = 'Читать больше';
+        }
+    ?>
     <section class="professinals">
         <div class="container">
-            <div class="page__heading"><?php printf( _e('Статті для фахівців', 'Panangin'))?></div>
+            <div class="page__heading"><?php echo $pageTitle; ?></div>
             <ul class="professionals-post__list">
                 <?php
 
@@ -28,7 +39,7 @@ if ( $query->have_posts() ) {
 					   <strong><?php the_title(); ?></strong>
 					   <p class="professionals-post__date"><?php echo get_the_date('j F Y'); ?></p>
 					   <p  class="professionals-post__content"><?php echo the_excerpt(); ?></p>
-					   <a href="<?php echo get_the_permalink(); ?>" class="professionals-post__button">Читать больше </a>
+					   <a href="<?php echo get_the_permalink(); ?>" class="professionals-post__button"><?php echo $readMoreButton; ?></a>
                   </p>
                 </div>
          </li>

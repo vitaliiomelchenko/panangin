@@ -369,3 +369,8 @@ function show_test_function() {
 
 }
 add_shortcode('show_test', 'show_test_function');
+
+
+add_filter('excerpt_more', function($more) {
+	return '...';
+});
