@@ -6,6 +6,8 @@
 <?php
     $forteHeroTitle = get_field('forteHeroTitle');
     $forteHeroImage =  get_field('forteHeroImage');
+    $forteHeroButton =  get_field('forteHeroButton');
+    
 ?>
 <?php if( $forteHeroTitle || $forteHeroImage) : ?>
  <section class="forte__hero" >
@@ -19,7 +21,7 @@
                     </h1>
                 <?php endif;  ?> 
                 <?php if( have_rows('heroContentItem') ):?>
-                    <ul>
+                    <ul style="padding-left: 0;">
                         <?php  while( have_rows('heroContentItem') ) : the_row();
                                 $forteHeroContent = get_sub_field('forteHeroContent');
                         ?>
@@ -35,6 +37,7 @@
                         <?php endwhile; ?>
                     </ul>
                 <?php endif;  ?> 
+                <a href="<?php echo esc_url( $forteHeroButton['url'] ); ?>" class="button button--third"><?php echo esc_html( $forteHeroButton['title'] ); ?></a>
             </div>
             <?php endif; ?>
             <?php if( !empty( $forteHeroImage ) ): ?>
@@ -458,9 +461,7 @@
                     <p>
                         Регулярне живлення для сердця
                     </p>
-                <div class="button-wrapper">
                     <a href="#" class="button--third">Kупити</a>
-                </div>
                 </div>
                 <div class="col-lg-auto forte__cta__image">
                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/Group 24.png" alt="">
