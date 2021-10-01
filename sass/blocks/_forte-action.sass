@@ -67,6 +67,8 @@
     background: rgba(224,2,82,0.03)
     padding: 35px
     position: relative
+    .container
+        position: relative
     strong
         margin-bottom: 15px 
     p
@@ -78,6 +80,13 @@
     font-size: 20px
     line-height: 140%
     color: #A22752
+    +min-screen($breakpoint-md)
+        position: absolute
+        right: 0
+        bottom: 3px
+    +max-screen($breakpoint-sm)
+        display: block
+        text-align: center
 .hero__action__imageBAck
     position: absolute
     z-index: -2
