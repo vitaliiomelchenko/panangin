@@ -1,26 +1,50 @@
 .forte__hero
-    background: #5B0029
+    position: relative
     width: 100%
     margin-bottom: 80px
+    background: #5b0029
+    padding-bottom: 75px
+    #bigHalfCircle 
+        position: absolute
+        bottom: 0
+        left: 0
+        path
+            fill: white
+            stroke: white
     .hero__imageWrapper
-        margin-bottom: 130px 
         padding-left: 0
+        background-image: url(../assets/images/forte/panangin-forte-bg.png)
+        background-repeat: no-repeat
+        background-size: contain
+        height: 100%
+        display: flex
         img
             width: 100%
-.forte__heroImageBackground
-    position: absolute
-    top: -100%
-    left: -30%
-.forte__heroContent
-    padding-top: 164px 
-    h1
-        color: #fff
-        margin-bottom: 24px
-    li
-        color: #fff
-        padding-bottom: 15px
-        list-style: none
-        display: flex
+            object-fit: contain
+    .row
+        min-height: 600px
+        height: calc(100vh - 97px)
         align-items: center
-        svg
-            margin-right: 17px
+    &ImageBackground
+        position: absolute
+        top: -100%
+        left: -30%
+    &Content
+        h1
+            color: #fff
+            margin-bottom: 24px
+        li
+            color: #fff
+            padding-bottom: 15px
+            list-style: none
+            display: flex
+            align-items: center
+            svg
+                margin-right: 17px
+.d-forte-only
+    display: none
+.page-template-forte
+    header
+        background: #5B0029
+    .d-forte-only
+        display: block
