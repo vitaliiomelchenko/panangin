@@ -131,6 +131,13 @@ body
                     &:last-child
                         left: 50%
                         right: 50%
+            +max-screen($breakpoint-md)
+                &::after
+                    content: ""
+                    display: block
+                    width: 20px
+                    height: 3px
+                    background: #ed135a
 
 
     &__symbol
@@ -142,6 +149,14 @@ body
         font-weight: 300
         font-size: 50px
         color: $color-secondary
+        width: 40px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        +max-screen($breakpoint-md)
+            &::after
+                content: "+"
         button
             background: transparent
             width: 40px
@@ -149,6 +164,8 @@ body
             border: 0
             font-size: 1.5em
             position: relative
+            +max-screen($breakpoint-md)
+                display: none
             span
                 position: absolute
                 transition: 300ms
