@@ -11,6 +11,11 @@
 ?>
 <?php if( $forteHeroTitle || $forteHeroImage) : ?>
  <section class="forte__hero" >
+    <svg id="bigHalfCircle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C40 0 60 0 100 100 Z" />
+    </svg>
+
+
        <div class="container">
         <div class="row">
             <?php if( $forteHeroTitle ) : ?> 
