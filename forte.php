@@ -2,7 +2,7 @@
 <?php
     /* Template Name: Forte */
 ?>
-<?php get_header('forte'); ?>
+<?php get_header(); ?>
 <?php
     $forteHeroTitle = get_field('forteHeroTitle');
     $forteHeroImage =  get_field('forteHeroImage');
