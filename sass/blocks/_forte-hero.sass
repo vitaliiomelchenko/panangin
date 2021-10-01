@@ -8,6 +8,7 @@
         position: absolute
         bottom: 0
         left: 0
+        z-index: 10
         path
             fill: white
             stroke: white
@@ -18,18 +19,24 @@
         background-size: contain
         height: 100%
         display: flex
+        z-index: 1
+        +max-screen($breakpoint-md)
+            padding-top: 50px
         img
             width: 100%
             object-fit: contain
     .row
-        min-height: 600px
-        height: calc(100vh - 97px)
         align-items: center
+        min-height: 600px
+        +min-screen(1200px)
+            min-height: 600px
+            height: calc(100vh - 97px)
     &ImageBackground
         position: absolute
         top: -100%
         left: -30%
     &Content
+        margin-bottom: 20px
         h1
             color: #fff
             margin-bottom: 24px
@@ -48,3 +55,8 @@
         background: #5B0029
     .d-forte-only
         display: block
+.forte
+    &__logo
+        margin-bottom: 50px
+        +max-screen($breakpoint-md)
+            margin-bottom: 20px

@@ -92,12 +92,14 @@
     z-index: -2
     width: 90% !important
 .hero__action
+    overflow-x: hidden
     &__imageWrapper
         +max-screen($breakpoint-md)
             order: -1
             padding-bottom: 100px
 .action-right-bottom-pseudo,.action-right-top-pseudo,.action-left-bottom-pseudo,.action-left-top-pseudo
     position: absolute
+    max-width: 100%
 .action-right-bottom-pseudo
     right: -20px
     top: 40px
