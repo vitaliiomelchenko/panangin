@@ -13,6 +13,9 @@ footer
 			max-width: 335px
 			+max-screen($breakpoint-md)
 				margin-bottom: 40px
+			strong
+				display: block
+				margin-bottom: 15px
 .footerContact___itemIcon
 	margin-right: 20px
 footer
@@ -52,5 +55,11 @@ footer
 	background-size: cover
 	padding-top: 120px
 	background-repeat: no-repeat
-						
-						
+	.created
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			text-decoration: none
+			&:hover
+				text-decoration: underline

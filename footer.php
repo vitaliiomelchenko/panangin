@@ -64,7 +64,7 @@
     </section>
     </section>
     <section class="created" style="background: #0054A6;padding: 13px;border-top: 1px solid rgba(255, 255, 255, 0.3);">
-        <a href="https://levelmedia.com.ua/" style="text-align: center;font-weight: normal; font-size: 18px; line-height: 23px; color: #FFFFFF;margin-top: 0; margin-bottom: 0;">Created by Level Media</p>
+        <a href="https://levelmedia.com.ua/" style="text-align: center;font-weight: normal; font-size: 18px; line-height: 23px; color: #FFFFFF;margin-top: 0; margin-bottom: 0;">Created by Level Media</a>
     </section>
 </footer>
 
