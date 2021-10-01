@@ -105,43 +105,7 @@ function my_acf_op_init() {
 function the_acf_loop(){
   get_template_part('template-parts/loop/acf-blocks','loop');
 }
-//register custom post type
-add_action( 'init', 'register_post_types' );
-function register_post_types(){
-	register_post_type( 'specialist', [
-		'label'  => true,
-		'labels' => [
-			'name'               => 'Для Фахівців', // основное название для типа записи
-			'singular_name'      => 'Для Фахівців', // название для одной записи этого типа
-			'add_new'            => 'Додати статтю для фахівців', // для добавления новой записи
-			'add_new_item'       => 'Додавання статті для фахівців', // заголовка у вновь создаваемой записи в админ-панели.
-			'edit_item'          => 'Редакція статті для фахівців', // для редактирования типа записи
-			'new_item'           => 'Нова стаття для фахівців', // текст новой записи
-			'view_item'          => 'Переглянути  статтю для фахівців', // для просмотра записи этого типа.
-			'search_items'       => 'Шукати статтю для фахівців', // для поиска по этим типам записи
-			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
-			'parent_item_colon'  => '', // для родителей (у древовидных типов)
-			'menu_name'          => 'Для Фахівців', // название меню
-		],
-		'description'         => '',
-		'public'              => true,
-		'show_in_menu'        => true, // показывать ли в меню адмнки
-		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
-		'rest_base'           => true, // $post_type. C WP 4.7
-		'menu_position'       => null,
-		'menu_icon'           => null,
-		//'capability_type'   => 'post',
-		//'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
-		//'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
-		'hierarchical'        => false,
-		'supports'            => [ 'title', 'editor','title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats' ], 
-		'taxonomies'          => [],
-		'has_archive'         => true,
-		'rewrite'             => true,
-		'query_var'           => true,
-	] );
-}
+
 // adding options page
 if( function_exists('acf_add_options_page') ) {
 	
