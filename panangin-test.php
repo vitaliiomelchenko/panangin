@@ -173,7 +173,7 @@ get_header();  ?>
             </div>
             <div class="questtxt"><?php printf( _e('Здоровый сон для меня — несбыточная мечта.', 'Panangin'))?></div>
             <div class="ansver" id="ansver9">
-                <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i><?php printf( _e('Нет, я хорошо сплю', 'Panangin'))?></div></div>
+                <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i><?php printf( _e('Нет, я хорошо сплю', 'Panangin'))?></div>
                 <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i>
                     <?php printf( _e('По-разному: иногда сразу засыпаю, иногда мучаюсь', 'Panangin'))?></div>
                 <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i>
@@ -181,6 +181,7 @@ get_header();  ?>
                     <?php printf( _e('Я плохо засыпаю и вынужден
                     принимать снотворное', 'Panangin'))?>
                 </div>
+            </div>
             <div class="nextblock button button-primary" onclick="gotostep('10')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
