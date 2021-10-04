@@ -30,5 +30,17 @@ Template Name: UiKit
         <h3 class="h3">h3</h3>
         <h4 class="h4">h4</h4>
         <h5 class="h5">h5</h5>
-</div>
+</div>  
+    <div class="pop-up">
+        <h2 class="pop-up__title h2">
+            Вход для специалистов здравохранения
+        </h2>
+        <h3 class="h3 pop-up__content">
+            Если Вы являетесь специалистом здравоохранения, в качестве подтверждения нажмите «ВХОД», чтобы начать работу.
+        </h3>
+        <div class="pop-up__button__wrapper">
+            <a href="#" class=" button button-secondary">Отмена</a>
+            <a href="#" class=" button button-primary">Вход</a>
+        </div>
+    </div>
 <?php get_footer(); ?>
