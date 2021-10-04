@@ -509,7 +509,9 @@
                     <p>
                     <?php echo $ctaContent ?>
                     </p>
+
                     <a href="<?php echo esc_url( $forteCTAbutton['url'] ); ?>" class="button button--third"><?php echo esc_html( $forteCTAbutton['title'] ); ?></a>
+                    <a href="<?php echo esc_url( $forteCTAbutton2['url'] ); ?>" class="button button--third"><?php echo esc_html( $forteCTAbutton2['title'] ); ?></a>
                 </div>
                 <div class="col-lg-auto forte__cta__image">
                     <img src="<?php echo esc_url($forteCTAimage['url']); ?>" alt="<?php echo esc_attr($forteCTAimage['alt']); ?>" />
