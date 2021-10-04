@@ -477,6 +477,7 @@
        $forteCTAcontent = get_field('forteCTAcontent');
        $forteCTAbutton = get_field('forteCTAbutton');
        $forteCTAimage = get_field('forteCTAimage');
+    $forteCTAbutton2 = get_field('forteCTAbutton2');
    ?> 
      <?php 
     if( get_locale() == 'uk'){
