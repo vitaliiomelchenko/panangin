@@ -17,16 +17,16 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Вредные блюда самые вкусные. Поэтому я регулярно
+            <div class="questtxt"><?php printf( _e('Вредные блюда самые вкусные. Поэтому я регулярно
                 ем и жирное, и жареное. За день я съедаю до 60 г
-                различных жиров и более 100 г мяса и колбасы</div>
+                различных жиров и более 100 г мяса и колбасы ', 'Panangin'))?></div>
             <div class="ansver" id="ansver1">
-                <div onclick="test_step(1,0)" id="ansver10"><i class="far fa-circle"></i>Нет, ни в коем случае </div>
-                <div onclick="test_step(1,3)" id="ansver13"><i class="far fa-circle"></i>Да, но лишь иногда </div>
-                <div onclick="test_step(1,6)" id="ansver16"><i class="far fa-circle"></i>Не вижу смысла себя
-                    ограничивать и съедаю даже больше</div>
+                <div onclick="test_step(1,0)" id="ansver10"><i class="far fa-circle"></i><?php printf( _e('Нет, ни в коем случае', 'Panangin'))?></div>
+                <div onclick="test_step(1,3)" id="ansver13"><i class="far fa-circle"></i><?php printf( _e('Да, но лишь иногда ', 'Panangin'))?></div>
+                <div onclick="test_step(1,6)" id="ansver16"><i class="far fa-circle"></i><?php printf( _e('Не вижу смысла себя ограничивать и съедаю даже больше', 'Panangin'))?></div>
+                    
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('2')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('2')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -34,15 +34,15 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div><span class="pic-inner"></span></div>
             </div>
-            <div class="questtxt">Мой вес превышает норму более чем на 5 кг</div>
+            <div class="questtxt"><?php printf( _e('Мой вес превышает норму более чем на 5 кг', 'Panangin'))?></div>
             <div class="ansver" id="ansver2">
-                <div onclick="test_step(2,0)" id="ansver20"><i class="far fa-circle"></i>Конечно же, нет</div>
-                <div onclick="test_step(2,3)" id="ansver23"><i class="far fa-circle"></i>Да, но не больше 15 кг</div>
-                <div onclick="test_step(2,6)" id="ansver26"><i class="far fa-circle"></i>Мой вес превышает норму более
+                <div onclick="test_step(2,0)" id="ansver20"><i class="far fa-circle"></i><?php printf( _e('Конечно же, нет', 'Panangin'))?></div>
+                <div onclick="test_step(2,3)" id="ansver23"><i class="far fa-circle"></i><?php printf( _e('Да, но не больше 15 кг', 'Panangin'))?></div>
+                <div onclick="test_step(2,6)" id="ansver26"><i class="far fa-circle"></i><?php printf( _e('Мой вес превышает норму более
                     чем на 15 кг, и с этим
-                    ничего не поделать</div>
+                    ничего не поделать', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('3')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('3')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -50,17 +50,20 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Я считаю, что курить — это нормально</div>
+            <div class="questtxt"><?php printf( _e('Я считаю, что курить — это нормально', 'Panangin'))?></div>
             <div class="ansver" id="ansver3">
-                <div onclick="test_step(3,0)" id="ansver30"><i class="far fa-circle"></i>Нет, не курю уже больше года
+                <div onclick="test_step(3,0)" id="ansver30"><i class="far fa-circle"></i>
+                <?php printf( _e('Нет, не курю уже больше года', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(3,8)" id="ansver38"><i class="far fa-circle"></i>Да, но не более 10 сигарет
-                    ежедневно</div>
-                <div onclick="test_step(3,11)" id="ansver311"><i class="far fa-circle"></i>Да, но не более двадцати
-                    сигарет в день</div>
-                <div onclick="test_step(3,14)" id="ansver314"><i class="far fa-circle"></i>Да, больше двадцати</div>
+                <div onclick="test_step(3,8)" id="ansver38"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, но не более 10 сигарет
+                    ежедневно', 'Panangin'))?></div>
+                <div onclick="test_step(3,11)" id="ansver311"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, но не более двадцати
+                    сигарет в день', 'Panangin'))?></div>
+                <div onclick="test_step(3,14)" id="ansver314"><i class="far fa-circle"></i><?php printf( _e('Да, больше двадцати', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('4')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('4')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -68,16 +71,19 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">За день я выпиваю больше двух кружек пива (бокалов вина, рюмок водки)</div>
+            <div class="questtxt"><?php printf( _e('За день я выпиваю больше двух кружек пива (бокалов вина, рюмок водки)', 'Panangin'))?></div>
             <div class="ansver" id="ansver4">
-                <div onclick="test_step(4,0)" id="ansver40"><i class="far fa-circle"></i>Нет, за редким исключением
+                <div onclick="test_step(4,0)" id="ansver40"><i class="far fa-circle"></i>
+                <?php printf( _e('Нет, за редким исключением', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(4,2)" id="ansver42"><i class="far fa-circle"></i>Да, такое происходит довольно
-                    часто</div>
-                <div onclick="test_step(4,4)" id="ansver44"><i class="far fa-circle"></i>Да, я почти ежедневно выпиваю
-                    даже больше</div>
+                <div onclick="test_step(4,2)" id="ansver42"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, такое происходит довольно
+                    часто', 'Panangin'))?></div>
+                <div onclick="test_step(4,4)" id="ansver44"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, я почти ежедневно выпиваю
+                    даже больше', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('5')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('5')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -86,17 +92,21 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Я ужасно устаю от перегрузок на работе и дома. Порой почти дохожу до нервного срыва.
+            <div class="questtxt">
+            <?php printf( _e('Я ужасно устаю от перегрузок на работе и дома. Порой почти дохожу до нервного срыва.', 'Panangin'))?>
             </div>
             <div class="ansver" id="ansver5">
-                <div onclick="test_step(5,0)" id="ansver50"><i class="far fa-circle"></i>Нет, такое случается крайне
-                    редко</div>
-                <div onclick="test_step(5,2)" id="ansver52"><i class="far fa-circle"></i>Да, время от времени такое
-                    бывает</div>
-                <div onclick="test_step(5,4)" id="ansver54"><i class="far fa-circle"></i>Да, я просто живу в состоянии
-                    перегрузок, и ничего не могу изменить</div>
+                <div onclick="test_step(5,0)" id="ansver50"><i class="far fa-circle"></i>
+                    <?php printf( _e('Нет, такое случается крайне
+                    редко', 'Panangin'))?></div>
+                <div onclick="test_step(5,2)" id="ansver52"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, время от времени такое
+                    бывает', 'Panangin'))?></div>
+                <div onclick="test_step(5,4)" id="ansver54"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, я просто живу в состоянии
+                    перегрузок, и ничего не могу изменить', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('6')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('6')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -104,17 +114,21 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Я постоянно тревожусь о завтрашнем дне, боюсь неприятностей, которые он может
-                принести.</div>
+            <div class="questtxt">
+                <?php printf( _e('Я постоянно тревожусь о завтрашнем дне, боюсь неприятностей, которые он может
+                принести.', 'Panangin'))?></div>
             <div class="ansver" id="ansver6">
-                <div onclick="test_step(6,0)" id="ansver60"><i class="far fa-circle"></i>Нет, я вполне уравновешен
+                <div onclick="test_step(6,0)" id="ansver60"><i class="far fa-circle"></i>
+                <?php printf( _e('Нет, я вполне уравновешен', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(6,2)" id="ansver62"><i class="far fa-circle"></i>Не всегда, но довольно часто
+                <div onclick="test_step(6,2)" id="ansver62"><i class="far fa-circle"></i>
+                <?php printf( _e('Не всегда, но довольно часто', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(6,4)" id="ansver64"><i class="far fa-circle"></i>Да, я уже давно испытываю
-                    душевные муки</div>
+                <div onclick="test_step(6,4)" id="ansver64"><i class="far fa-circle"></i>
+                    <?php printf( _e('Да, я уже давно испытываю
+                    душевные муки', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('7')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('7')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -123,16 +137,16 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">У моих родных артериальное давление повышено</div>
+            <div class="questtxt"><?php printf( _e('У моих родных артериальное давление повышено ', 'Panangin'))?></div>
             <div class="ansver" id="ansver7">
-                <div onclick="test_step(7,0)" id="ansver70"><i class="far fa-circle"></i>Нет, во всяком случае, я об
-                    этом не знаю</div>
-                <div onclick="test_step(7,2)" id="ansver72"><i class="far fa-circle"></i>Да, этим страдал один из
-                    родителей</div>
-                <div onclick="test_step(7,4)" id="ansver74"><i class="far fa-circle"></i>Да, у обоих родителей и (или)
-                    у братьев и сестер</div>
+                <div onclick="test_step(7,0)" id="ansver70"><i class="far fa-circle"></i> <?php printf( _e('Нет, во всяком случае, я об
+                    этом не знаю', 'Panangin'))?></div>
+                <div onclick="test_step(7,2)" id="ansver72"><i class="far fa-circle"></i> <?php printf( _e('Да, этим страдал один из
+                    родителей', 'Panangin'))?></div>
+                <div onclick="test_step(7,4)" id="ansver74"><i class="far fa-circle"></i> <?php printf( _e('Да, у обоих родителей и (или)
+                    у братьев и сестер', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('8')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('8')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -140,30 +154,33 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">У меня частенько болит голова, порой она словно свинцом налита.</div>
+            <div class="questtxt"><?php printf( _e('У меня частенько болит голова, порой она словно свинцом налита. ', 'Panangin'))?></div>
             <div class="ansver" id="ansver8">
-                <div onclick="test_step(8,0)" id="ansver80"><i class="far fa-circle"></i>Нет, этого почти не случается
+                <div onclick="test_step(8,0)" id="ansver80"><i class="far fa-circle"></i><?php printf( _e('Нет, этого почти не случается', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(8,2)" id="ansver82"><i class="far fa-circle"></i>Нечасто, хотя и чаще, чем
-                    раньше</div>
-                <div onclick="test_step(8,4)" id="ansver84"><i class="far fa-circle"></i>Да, часто</div>
+                <div onclick="test_step(8,2)" id="ansver82"><i class="far fa-circle"></i><?php printf( _e('Нечасто, хотя и чаще, чем
+                    раньше', 'Panangin'))?></div>
+                <div onclick="test_step(8,4)" id="ansver84"><i class="far fa-circle"></i><?php printf( _e('Да, часто', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('9')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('9')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
         <div id="step9">
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Здоровый сон для меня — несбыточная мечта.</div>
+            <div class="questtxt"><?php printf( _e('Здоровый сон для меня — несбыточная мечта.', 'Panangin'))?></div>
             <div class="ansver" id="ansver9">
-                <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i>Нет, я хорошо сплю</div>
-                <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i>По-разному: иногда сразу
-                    засыпаю, иногда мучаюсь</div>
-                <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i>Я плохо засыпаю и вынужден
-                    принимать снотворное</div>
+                <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i><?php printf( _e('Нет, я хорошо сплю', 'Panangin'))?></div></div>
+                <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i>
+                    <?php printf( _e('По-разному: иногда сразу засыпаю, иногда мучаюсь', 'Panangin'))?></div>
+                <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i>
+
+                    <?php printf( _e('Я плохо засыпаю и вынужден
+                    принимать снотворное', 'Panangin'))?>
+                </div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('10')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('10')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -173,17 +190,17 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Даже при небольших нагрузках и в состоянии покоя у меня
-                случается сильное сердцебиение, порой с перебоями.</div>
+            <div class="questtxt"><?php printf( _e('Даже при небольших нагрузках и в состоянии покоя у меня
+                случается сильное сердцебиение, порой с перебоями.', 'Panangin'))?></div>
             <div class="ansver" id="ansver100">
-                <div onclick="test_step(10,0)" id="ansver1000"><i class="far fa-circle"></i>Нет, у меня никогда не было
-                    таких проблем</div>
-                <div onclick="test_step(10,2)" id="ansver1002"><i class="far fa-circle"></i>Да, у меня это случается,
-                    но редко и не интенсивно</div>
-                <div onclick="test_step(10,6)" id="ansver1006"><i class="far fa-circle"></i>Да, все чаще и тревожнее
+                <div onclick="test_step(10,0)" id="ansver1000"><i class="far fa-circle"></i><?php printf( _e('Нет, у меня никогда не было
+                    таких проблем', 'Panangin'))?></div>
+                <div onclick="test_step(10,2)" id="ansver1002"><i class="far fa-circle"></i><?php printf( _e('Да, у меня это случается,
+                    но редко и не интенсивно', 'Panangin'))?></div>
+                <div onclick="test_step(10,6)" id="ansver1006"><i class="far fa-circle"></i><?php printf( _e('Да, все чаще и тревожнее', 'Panangin'))?>
                 </div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('11')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('11')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
@@ -192,24 +209,25 @@ get_header();  ?>
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
             </div>
-            <div class="questtxt">Я человек активный, даже неугомонный. Только и жду
-                задач, требующих решения!</div>
+            <div class="questtxt"><?php printf( _e('Я человек активный, даже неугомонный. Только и жду
+                задач, требующих решения!', 'Panangin'))?></div>
             <div class="ansver" id="ansver11">
-                <div onclick="test_step(11,0)" id="ansver110"><i class="far fa-circle"></i>Нет, я себя не отношу к
-                    таковым</div>
-                <div onclick="test_step(11,2)" id="ansver112"><i class="far fa-circle"></i>Да, я, скорее, заводной, чем
-                    спокойный, но могу заставить себя и отключиться</div>
-                <div onclick="test_step(11,4)" id="ansver114"><i class="far fa-circle"></i>Да, я постоянно в заведенном
-                    состоянии, часто до полного изнеможения</div>
+                <div onclick="test_step(11,0)" id="ansver110"><i class="far fa-circle"></i><?php printf( _e('Нет, я себя не отношу к
+                    таковым', 'Panangin'))?></div>
+                <div onclick="test_step(11,2)" id="ansver112"><i class="far fa-circle"></i><?php printf( _e('Да, я, скорее, заводной, чем
+                    спокойный, но могу заставить себя и отключиться', 'Panangin'))?></div>
+                <div onclick="test_step(11,4)" id="ansver114"><i class="far fa-circle"></i><?php printf( _e('Да, я постоянно в заведенном
+                    состоянии, часто до полного изнеможения', 'Panangin'))?></div>
             </div>
-            <div class="nextblock button button-primary" onclick="gotostep('12')">Далее</div>
+            <div class="nextblock button button-primary" onclick="gotostep('12')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
 
 
         <div id="step12">
-            <h2>Результат</h2><br><br>
+            <h2><?php printf( _e('Результат', 'Panangin'))?></h2><br><br>
             <div id="otvet1" class="otvet">
+                <?php printf( _e('                
                 Если вы не приукрашиваете, для развития артериальной гипертензии нет особых причин. Однако помните о
                 пользе зарядки
                 и прогулок на свежем воздухе. Включите в рацион полезные продукты, богатые солями магния (овсяную крупу,
@@ -217,10 +235,13 @@ get_header();  ?>
                 отруби) и калия (печеный картофель, изюм, курагу, чернослив,
                 капусту, баклажаны, абрикосы). Не забудьте и о морепродуктах.
                 А если вам более 40 лет, не реже двух раз в год следует проходить
-                обследование
+                обследование', 'Panangin'))?>
             </div>
 
-            <div id="otvet2" class="otvet">Повысилось ли ваше кровяное давление или пока еще нет,
+            <div id="otvet2" class="otvet">
+
+                <?php printf( _e('                
+                Повысилось ли ваше кровяное давление или пока еще нет,
                 у вас для этого уже больше, чем нужно, негативных причин. Постарайтесь устранить их: рационально
                 питайтесь, следите
                 за весом, снижайте потребление никотина и алкоголя. Ежедневно понуждайте себя хотя бы к малым физическим
@@ -231,25 +252,29 @@ get_header();  ?>
                 и повышенного давления, существует промежуточное «лабильное» давление. Оно нормально в состоянии покоя и
                 повышается
                 при незначительной нагрузке. Лабильное кровяное давление —
-                предвестник или первая ступень гипертонии.
+                предвестник или первая ступень гипертонии.', 'Panangin'))?>
             </div>
-            <div id="otvet3" class="otvet">Вы принадлежите к типу людей, склонных к повышенному
-                давлению. Только врач может констатировать, имеется ли у вас
-                гипертония или вы лишь провоцируете ее появление дурными
-                привычками. Откажитесь от сахара, сладостей, мучных блюд,
-                кондитерских изделий, старайтесь меньше есть жирного, жареного, соленого. А вот овощей, притом в сыром
-                виде, включайте
-                в рацион как можно больше. И примите к сведению: теряя один
-                килограмм своих жировых запасов, вы снижаете артериальное
-                давление в среднем на один миллиметр ртутного столба
+            <div id="otvet3" class="otvet">
+
+                <?php printf( _e('                
+                    Вы принадлежите к типу людей, склонных к повышенному
+                    давлению. Только врач может констатировать, имеется ли у вас
+                    гипертония или вы лишь провоцируете ее появление дурными
+                    привычками. Откажитесь от сахара, сладостей, мучных блюд,
+                    кондитерских изделий, старайтесь меньше есть жирного, жареного, соленого. А вот овощей, притом в сыром
+                    виде, включайте
+                    в рацион как можно больше. И примите к сведению: теряя один
+                    килограмм своих жировых запасов, вы снижаете артериальное
+                    давление в среднем на один миллиметр ртутного столба', 'Panangin'))?>
             </div>
             <div id="otvet4" class="otvet">
+            <?php printf( _e('
                 Если вы ничего не преувеличили, вам серьезно угрожает
                 гипертензия. Немедленно отправляйтесь к врачу. Не уклоняйтесь от этого решения. Вам нужно проверить
                 сердце и почки.
                 Боритесь с излишками веса, откажитесь от курения и алкоголя. И помните: чтобы жить долго и хорошо,
                 необходимо
-                заботиться о собственном здоровье.
+                заботиться о собственном здоровье.', 'Panangin'))?>
             </div>
             <a class="nextblock button button-primary" style="margin-top: 40px;" href="https://panangin.levelmedia.com.ua/test-nachalo/">В начало</a>
             <div class="clearfix"></div>
