@@ -13,6 +13,7 @@ get_header();  ?>
 <div class="test-home container test-wrapper" style="margin-bottom: 70px">
 
     <div class="steps">
+
         <div id="step1" class="step_active">
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
@@ -165,6 +166,7 @@ get_header();  ?>
             <div class="nextblock button button-primary" onclick="gotostep('9')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
+
         <div id="step9">
             <div class="linesteps">
                 <div class="pic"><div class="pic-inner"></div></div>
@@ -179,7 +181,6 @@ get_header();  ?>
                     <?php printf( _e('Я плохо засыпаю и вынужден
                     принимать снотворное', 'Panangin'))?>
                 </div>
-            </div>
             <div class="nextblock button button-primary" onclick="gotostep('10')"><?php printf( _e('Далее', 'Panangin'))?></div>
             <div class="clearfix"></div>
         </div>
