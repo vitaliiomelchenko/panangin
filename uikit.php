@@ -39,8 +39,8 @@ Template Name: UiKit
             Если Вы являетесь специалистом здравоохранения, в качестве подтверждения нажмите «ВХОД», чтобы начать работу.
         </h3>
         <div class="pop-up__button__wrapper">
-            <a href="#" class=" button button-secondary">Отмена</a>
-            <a href="#" class=" button button-primary">Вход</a>
+            <a href="#popup-close" class="button button-secondary">Отмена</a>
+            <a href="#popup-enter" class="button button-primary">Вход</a>
         </div>
     </div>
 <?php get_footer(); ?>

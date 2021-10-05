@@ -63,14 +63,7 @@ function lazyInit(){
     });
 }
 lazyInit();
-//smooth scroll to anchor
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
 
 //animations
 
@@ -131,4 +124,40 @@ $(document).ready(function() {
       return false;
     } 
   });
+});
+
+//init popups
+$("[data-popup]").each(function(){
+  let target = $(this).data('popup');
+  $(this).click(function(){
+    $(target).addClass('active');
+  });
+});
+$('.popup').each(function(){
+  let element = $(this);
+  let close = $(this).find('.popup__close');
+  close.click(function(){
+    element.removeClass('active');
+  });
+});
+
+
+//smooth scroll to anchor
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
+/**Archive specialist popup */
+$(document).ready(function() {
+  $('.page-template-archive-proffesionals').addClass('pop-up-enabled');
+});
+
+$('.popup-enter').on("click", function(e){
+  e.preventDefault();
+  $(this).parent().parent().removeClass('active');
+  $('body').removeClass('pop-up-enabled');
 });

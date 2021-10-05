@@ -1,4 +1,18 @@
 <?php get_header(); ?>
+
+    <div class="pop-up active">
+        <h2 class="pop-up__title h2">
+            Вход для специалистов здравохранения
+        </h2>
+        <h3 class="h3 pop-up__content">
+            Если Вы являетесь специалистом здравоохранения, в качестве подтверждения нажмите «ВХОД», чтобы начать работу.
+        </h3>
+        <div class="pop-up__button__wrapper">
+            <a href="<?php echo home_url('/');?>" class="popup-close button button-secondary">Отмена</a>
+            <a href="#popup-enter" class="popup-enter button button-primary">Вход</a>
+        </div>
+    </div>
+
 <?php
 /* Template Name: Для специалистов*/
 ?>
