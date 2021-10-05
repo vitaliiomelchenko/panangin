@@ -9,11 +9,6 @@
     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/left-imagecontent.png" alt="" class="imageContent__leftDecoration">
     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/right-imagecontent.png" alt="" class="imageContent__rightDecoration">
     <div class="container">
-        <?php if( $headingIC) : ?>
-            <div class="image_content__heading text--center">
-                <?php echo  $headingIC; ?>
-            </div>
-        <?php endif; ?>
         <div class="row image-content__row">
             <div class="col-lg-6 image_content__imageWrapper">
                 <?php if( !empty( $imageIC ) ): ?>
