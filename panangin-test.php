@@ -300,8 +300,20 @@ get_header();  ?>
 
 
 </div>
-<section>
-    <div class="page__heading">Корисні поради</div>
+<section class="posts_block">
+    <?php 
+    if( get_locale() == 'uk'){
+        $blockTitle = 'Корисні поради';
+        $blockButton = 'Всі новини';
+        $postButton = 'Читати далі';
+    }   
+    elseif(get_locale() == 'ru_RU'){
+        $blockTitle = 'Полезные советы';
+        $blockButton = 'Все новости';
+        $postButton = 'Читать дальше';
+    }
+    ?>
+    <div class="page__heading"><?php echo $blockTitle; ?></div>
         <div class="container">
             <ul class="row blog__row">
 
@@ -321,7 +333,7 @@ get_header();  ?>
                                         <h5>
                                             <?php the_title(); ?>
                                         </h5>
-                                        <a class="blog-button" href="<?php echo get_the_permalink(); ?>">Читати далі <svg width="17" height="15"
+                                        <a class="blog-button" href="<?php echo get_the_permalink(); ?>"><?php echo $postButton; ?><svg width="17" height="15"
                                                 viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M15.75 7.72559L0.75 7.72559" stroke="#58585B" stroke-width="1.5"
                                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -338,8 +350,8 @@ get_header();  ?>
                 <p><?php esc_html_e( 'Нет постов по вашим критериям.' ); ?></p>
             <?php endif; ?>                
         </ul>
-        <div class="blog__buttonWrapper">
-            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary">Всі новини</a>
+        <div class="button-wrapper">
+            <a href="https://panangin.levelmedia.com.ua/korisni-poradi/" class="button button-primary"><?php echo $blockButton; ?></a>
         </div>
     </div>
 </section>
