@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 <div class="breadcrumbs">
     <div class="container">
@@ -60,8 +59,16 @@
         <div class="pagination">
 			<?php
 			$amount = $query->found_posts;
+			if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+			 if (ICL_LANGUAGE_CODE == 'uk') : 
+				
+				$base =  '/korysni-porady/page/%#%';
+				
+				else :  $base =  '/' . ICL_LANGUAGE_CODE . '/korysni-porady/page/%#%';
+			endif;
+			}
 			$args = [
-                                        'base'         => '/korysni-porady/page/%#%',
+                                        'base'         => $base,
                                         'format'       => '',
                                         'total'        => ceil($amount / $postsPerPage),
                                         'current'      => max(1, get_query_var('paged')),

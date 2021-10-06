@@ -53,14 +53,11 @@ get_header();  ?>
             </div>
             <div class="questtxt"><?php printf( _e('Я считаю, что курить — это нормально', 'Panangin'))?></div>
             <div class="ansver" id="ansver3">
-                <div onclick="test_step(3,0)" id="ansver30"><i class="far fa-circle"></i>
-                <?php printf( _e('Нет, не курю уже больше года', 'Panangin'))?>
+                <div onclick="test_step(3,0)" id="ansver30"><i class="far fa-circle"></i><?php printf( _e('Нет, не курю уже больше года', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(3,8)" id="ansver38"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, но не более 10 сигарет
+                <div onclick="test_step(3,8)" id="ansver38"><i class="far fa-circle"></i><?php printf( _e('Да, но не более 10 сигарет
                     ежедневно', 'Panangin'))?></div>
-                <div onclick="test_step(3,11)" id="ansver311"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, но не более двадцати
+                <div onclick="test_step(3,11)" id="ansver311"><i class="far fa-circle"></i><?php printf( _e('Да, но не более двадцати
                     сигарет в день', 'Panangin'))?></div>
                 <div onclick="test_step(3,14)" id="ansver314"><i class="far fa-circle"></i><?php printf( _e('Да, больше двадцати', 'Panangin'))?></div>
             </div>
@@ -74,14 +71,11 @@ get_header();  ?>
             </div>
             <div class="questtxt"><?php printf( _e('За день я выпиваю больше двух кружек пива (бокалов вина, рюмок водки)', 'Panangin'))?></div>
             <div class="ansver" id="ansver4">
-                <div onclick="test_step(4,0)" id="ansver40"><i class="far fa-circle"></i>
-                <?php printf( _e('Нет, за редким исключением', 'Panangin'))?>
+                <div onclick="test_step(4,0)" id="ansver40"><i class="far fa-circle"></i><?php printf( _e('Нет, за редким исключением', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(4,2)" id="ansver42"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, такое происходит довольно
+                <div onclick="test_step(4,2)" id="ansver42"><i class="far fa-circle"></i><?php printf( _e('Да, такое происходит довольно
                     часто', 'Panangin'))?></div>
-                <div onclick="test_step(4,4)" id="ansver44"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, я почти ежедневно выпиваю
+                <div onclick="test_step(4,4)" id="ansver44"><i class="far fa-circle"></i><?php printf( _e('Да, я почти ежедневно выпиваю
                     даже больше', 'Panangin'))?></div>
             </div>
             <div class="nextblock button button-primary" onclick="gotostep('5')"><?php printf( _e('Далее', 'Panangin'))?></div>
@@ -97,14 +91,11 @@ get_header();  ?>
             <?php printf( _e('Я ужасно устаю от перегрузок на работе и дома. Порой почти дохожу до нервного срыва.', 'Panangin'))?>
             </div>
             <div class="ansver" id="ansver5">
-                <div onclick="test_step(5,0)" id="ansver50"><i class="far fa-circle"></i>
-                    <?php printf( _e('Нет, такое случается крайне
+                <div onclick="test_step(5,0)" id="ansver50"><i class="far fa-circle"></i><?php printf( _e('Нет, такое случается крайне
                     редко', 'Panangin'))?></div>
-                <div onclick="test_step(5,2)" id="ansver52"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, время от времени такое
+                <div onclick="test_step(5,2)" id="ansver52"><i class="far fa-circle"></i><?php printf( _e('Да, время от времени такое
                     бывает', 'Panangin'))?></div>
-                <div onclick="test_step(5,4)" id="ansver54"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, я просто живу в состоянии
+                <div onclick="test_step(5,4)" id="ansver54"><i class="far fa-circle"></i><?php printf( _e('Да, я просто живу в состоянии
                     перегрузок, и ничего не могу изменить', 'Panangin'))?></div>
             </div>
             <div class="nextblock button button-primary" onclick="gotostep('6')"><?php printf( _e('Далее', 'Panangin'))?></div>
@@ -119,14 +110,11 @@ get_header();  ?>
                 <?php printf( _e('Я постоянно тревожусь о завтрашнем дне, боюсь неприятностей, которые он может
                 принести.', 'Panangin'))?></div>
             <div class="ansver" id="ansver6">
-                <div onclick="test_step(6,0)" id="ansver60"><i class="far fa-circle"></i>
-                <?php printf( _e('Нет, я вполне уравновешен', 'Panangin'))?>
+                <div onclick="test_step(6,0)" id="ansver60"><i class="far fa-circle"></i><?php printf( _e('Нет, я вполне уравновешен', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(6,2)" id="ansver62"><i class="far fa-circle"></i>
-                <?php printf( _e('Не всегда, но довольно часто', 'Panangin'))?>
+                <div onclick="test_step(6,2)" id="ansver62"><i class="far fa-circle"></i><?php printf( _e('Не всегда, но довольно часто', 'Panangin'))?>
                 </div>
-                <div onclick="test_step(6,4)" id="ansver64"><i class="far fa-circle"></i>
-                    <?php printf( _e('Да, я уже давно испытываю
+                <div onclick="test_step(6,4)" id="ansver64"><i class="far fa-circle"></i><?php printf( _e('Да, я уже давно испытываю
                     душевные муки', 'Panangin'))?></div>
             </div>
             <div class="nextblock button button-primary" onclick="gotostep('7')"><?php printf( _e('Далее', 'Panangin'))?></div>
@@ -140,11 +128,11 @@ get_header();  ?>
             </div>
             <div class="questtxt"><?php printf( _e('У моих родных артериальное давление повышено ', 'Panangin'))?></div>
             <div class="ansver" id="ansver7">
-                <div onclick="test_step(7,0)" id="ansver70"><i class="far fa-circle"></i> <?php printf( _e('Нет, во всяком случае, я об
+                <div onclick="test_step(7,0)" id="ansver70"><i class="far fa-circle"></i><?php printf( _e('Нет, во всяком случае, я об
                     этом не знаю', 'Panangin'))?></div>
-                <div onclick="test_step(7,2)" id="ansver72"><i class="far fa-circle"></i> <?php printf( _e('Да, этим страдал один из
+                <div onclick="test_step(7,2)" id="ansver72"><i class="far fa-circle"></i><?php printf( _e('Да, этим страдал один из
                     родителей', 'Panangin'))?></div>
-                <div onclick="test_step(7,4)" id="ansver74"><i class="far fa-circle"></i> <?php printf( _e('Да, у обоих родителей и (или)
+                <div onclick="test_step(7,4)" id="ansver74"><i class="far fa-circle"></i><?php printf( _e('Да, у обоих родителей и (или)
                     у братьев и сестер', 'Panangin'))?></div>
             </div>
             <div class="nextblock button button-primary" onclick="gotostep('8')"><?php printf( _e('Далее', 'Panangin'))?></div>
@@ -174,11 +162,8 @@ get_header();  ?>
             <div class="questtxt"><?php printf( _e('Здоровый сон для меня — несбыточная мечта.', 'Panangin'))?></div>
             <div class="ansver" id="ansver9">
                 <div onclick="test_step(9,0)" id="ansver90"><i class="far fa-circle"></i><?php printf( _e('Нет, я хорошо сплю', 'Panangin'))?></div>
-                <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i>
-                    <?php printf( _e('По-разному: иногда сразу засыпаю, иногда мучаюсь', 'Panangin'))?></div>
-                <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i>
-
-                    <?php printf( _e('Я плохо засыпаю и вынужден
+                <div onclick="test_step(9,2)" id="ansver92"><i class="far fa-circle"></i><?php printf( _e('По-разному: иногда сразу засыпаю, иногда мучаюсь', 'Panangin'))?></div>
+                <div onclick="test_step(9,4)" id="ansver94"><i class="far fa-circle"></i><?php printf( _e('Я плохо засыпаю и вынужден
                     принимать снотворное', 'Panangin'))?>
                 </div>
             </div>
